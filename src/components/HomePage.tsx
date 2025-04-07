@@ -4,7 +4,7 @@ function HomePage() {
     return(
         <>
         {/* class="row flex-lg-row-reverse align-items-center g-lg-5 py-5" */}
-        <div className="p-4 rounded-lg my-30 flex flex-row items-center ">
+        <div className="p-4 rounded-lg my-30 flex flex-row items-center">
         <img src="/src/assets/PhotoMoi.png" alt="Lights" className="rounded-lg h-80 w-80"/>
         <div className="flex flex-col ml-8">
             <h1 className="text-6xl font-black text-violet-950">Charmidez ASSIOBO</h1>

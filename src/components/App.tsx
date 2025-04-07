@@ -5,7 +5,7 @@ import BodyMine from "./BodyMine";
 function App() {
   return (
     <>
-      <header>
+      <header className="bg-violet-50">
         <NavBarMine />
       </header>
       <body>

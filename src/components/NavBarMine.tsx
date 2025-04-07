@@ -1,10 +1,12 @@
 import ButtonMine from "./ButtonMine";
+import ContainerMine from "./ContainerMine";
 import MenuItemMine from "./MenuItemMine";
 
 function NavBarMine() {
   return (
     <>
-      <div className="navbar bg-violet-50 fixed top-0 z-50 max-w-7xl flex justify-center">
+    <ContainerMine>
+    <div className="navbar bg-violet-50 fixed top-0 z-50 w-full max-w-[1140px] flex justify-center items-center mx-auto">
         <div className="navbar-start">
           <div className="dropdown">
             <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden bg-violet-200 rounded mr-1">
@@ -45,7 +47,9 @@ function NavBarMine() {
         <div className="navbar-end">
             <ButtonMine text="e-Mail me" className="rounded-box px-8 py-3" />
         </div>
-      </div>
+    </div>
+    </ContainerMine>
+
     </>
   );
 }
