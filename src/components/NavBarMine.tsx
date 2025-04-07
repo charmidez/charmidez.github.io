@@ -4,7 +4,7 @@ import MenuItemMine from "./MenuItemMine";
 function NavBarMine() {
   return (
     <>
-      <div className="navbar">
+      <div className="navbar bg-violet-50 fixed top-0 z-50 max-w-7xl flex justify-center">
         <div className="navbar-start">
           <div className="dropdown">
             <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden bg-violet-200 rounded mr-1">
@@ -31,7 +31,7 @@ function NavBarMine() {
             <MenuItemMine label="Contact" className="mx-0.5" href="#"/>
             </ul>
           </div>
-          <img src='https://raw.githubusercontent.com/charmidez/portofolioMine/refs/heads/main/src/assets/logo.png' alt="Logo" className="h-8 w-8 object-contain mr-2"/>
+          <img src='/src/assets/logo.png' alt="Logo" className="h-8 w-8 object-contain mr-2"/>
           <a className="font-bold text-2xl text-violet-800">Charmidez</a>
         </div>
         <div className="navbar-center hidden lg:flex">
