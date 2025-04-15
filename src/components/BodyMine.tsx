@@ -4,19 +4,22 @@ import AboutPage from "./pages/AboutPage";
 import ContactPage from "./pages/ContactPage";
 import HomePage from "./pages/HomePage";
 import ProjectsMine from "./pages/ProjectMine";
+import NavBarMine from "./NavBarMine";
 
 
 function BodyMine() {
     return(
         <>
-        <div className="flex flex-col items-center bg-violet-50 ">
-            <div className="max-w-7xl mx-auto p-2 flex flex-col">
+        
+        <div className="flex flex-col items-center">
+            <div className="mx-auto flex flex-col">
+                <NavBarMine/>
                 <HomePage/>
-                <LigneSeparation borderSize="20" color="#5d0ec0"/>
+                {/*<LigneSeparation borderSize="20" color="#5d0ec0"/>*/}
                 <AboutPage/>
-                <LigneSeparation borderSize="20" color="#5d0ec0"/>
+                {/*<LigneSeparation borderSize="20" color="#5d0ec0"/>*/}
                 <ProjectsMine/>
-                <LigneSeparation borderSize="20" color="#5d0ec0"/>
+                {/*<LigneSeparation borderSize="20" color="#5d0ec0"/>*/}
                 <ContactPage/>
             </div>
 
