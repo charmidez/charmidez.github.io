@@ -12,11 +12,12 @@ function AboutPage() {
         </h2>
         <section className="grid grid-cols-1 md:grid-cols-1 lg:grid-cols-3 gap-4 py-8 px-4">
           {/* Colonne de gauche */}
-          <div className="bg-gray-200 p-4 rounded-lg shadow-md">
+          <div className=" p-16 rounded-lg">
             {/* Contenu à ajouter */}
+            <ImageMine src="/src/assets/setup3.jpg" alt="image" className="shadow-xl"/>
           </div>
           {/* Colonne centrale (plus grande) */}
-          <div className="bg-gray-300 p-6 rounded-lg shadow-lg col-span-1">
+          <div className="p-6 rounded-lg col-span-1">
             {/* Contenu à ajouter */}
             <img
               src="/src/assets/PhotoMoi.png"
@@ -57,9 +58,9 @@ function AboutPage() {
           </div>
 
           {/* Colonne de droite */}
-          <div className="p-15 rounded-lg pb-30">
+          <div className="p-15 rounded-lg pb-30 content-center">
             {/* Contenu à ajouter */}
-            <ImageMine src="/src/assets/PhotoMoi.png" alt="image" className="h-30 w-30"/>
+            <ImageMine src="/src/assets/setup4.jpg" alt="image" className="h-30 w-30"/>
           </div>
         </section>
       </section>
