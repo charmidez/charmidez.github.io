@@ -1,7 +1,4 @@
 
-
-import React from 'react';
-
 interface MenuItemProps {
   label: string;
   href?: string;

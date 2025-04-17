@@ -1,5 +1,10 @@
-import React from "react";
 import CardProject from "../CardProject";
+
+const esagdescription =
+  "<ul><li><strong>Website creation</strong></li><li><strong>Implementation of registration forms</strong></li><li><strong>Staff training for site management</strong></li></ul><p><em>WordPress – ReactJS – BootstrapCSS</em></p>";
+
+const recdescrion = "<ul><li><strong>Website creation</strong></li><li><strong>Development of a parcel tracking system</strong></li></ul><p><em>Ktor – WordPress – Jetpack Compose – Firebase</em></p>"
+
 
 function ProjectsMine() {
   return (
@@ -10,11 +15,21 @@ function ProjectsMine() {
           Here are some of the projects I have worked on.
         </p>
       </div>
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">  
-        <CardProject imageSrc="/src/assets/PhotoMoi.png" title="Site web YEMAG" description="Nous avons fait un site web YEMAG très propre"/>
-        <CardProject imageSrc="/src/assets/PhotoMoi.png" title="Site web YEMAG" description="Nous avons fait un site web YEMAG très propre"/>
-        <CardProject imageSrc="/src/assets/PhotoMoi.png" title="Site web YEMAG" description="Nous avons fait un site web YEMAG très propre"/>
-        <CardProject imageSrc="/src/assets/PhotoMoi.png" title="Site web YEMAG" description=""/>
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <CardProject
+          imageSrc="/src/assets/esag.png"
+          title="ESAG NDE"
+          description={esagdescription}
+          link="esagnde.org"
+          logo="/src/assets/logoesag.png"
+        />
+        <CardProject
+          imageSrc="/src/assets/rec.png"
+          title="REC LOGISTICS"
+          description={recdescrion}
+          link=""
+          logo="/src/assets/logorec.png"
+        />
       </div>
     </div>
   );

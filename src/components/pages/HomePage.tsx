@@ -1,4 +1,4 @@
-import React from "react";
+
 
 function HomePage() {
   return (
@@ -24,6 +24,20 @@ function HomePage() {
             specializing in modern technologies like Python, JavaScript, and
             Kotlin, along with their rich ecosystems and frameworks..
           </p>
+          <div className="flex flex-row lg:flex-row justify-start"> 
+            <a
+              href="#projects"
+              className="mt-4 text-blue-500 hover:underline"
+            >
+              <img src="/src/assets/github.png" alt="github" className="h-10 w-10"/>
+            </a>
+            <a
+              href="#projects"
+              className="mt-4 text-blue-500 hover:underline"
+            >
+              <img src="/src/assets/linkedin.png" alt="github" className="h-10 w-10"/>
+            </a>
+          </div>
         </div>
       </div>
     </>

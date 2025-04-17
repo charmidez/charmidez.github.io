@@ -4,6 +4,7 @@ import AboutPage from "./pages/AboutPage";
 import HomePage from "./pages/HomePage";
 import ProjectsMine from "./pages/ProjectMine";
 import NavBarMine from "./NavBarMine";
+import ContactPage from "./pages/ContactPage";
 
 
 function BodyMine() {
@@ -19,7 +20,7 @@ function BodyMine() {
                 {/*<LigneSeparation borderSize="20" color="#5d0ec0"/>*/}
                 <ProjectsMine/>
                 {/*<LigneSeparation borderSize="20" color="#5d0ec0"/>*/}
-                
+                <ContactPage/>
             </div>
 
         </div>

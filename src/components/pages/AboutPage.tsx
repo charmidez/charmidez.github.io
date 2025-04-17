@@ -10,7 +10,7 @@ function AboutPage() {
         <h2 className="text-4xl font-extrabold text-violet-800 dark:text-white text-center">
           About Me
         </h2>
-        <section className="grid grid-cols-1 md:grid-cols-1 lg:grid-cols-3 gap-4 py-8 px-4">
+        <section className="grid grid-cols-1 md:grid-cols-1 lg:grid-cols-3 gap-4 px-4">
           {/* Colonne de gauche */}
           <div className=" p-16 rounded-lg">
             {/* Contenu à ajouter */}
@@ -20,7 +20,7 @@ function AboutPage() {
           <div className="p-6 rounded-lg col-span-1">
             {/* Contenu à ajouter */}
             <img
-              src="/src/assets/PhotoMoi.png"
+              src="/src/assets/profil.png"
               alt="My Photo"
               className="rounded-full w-32 h-32 mx-auto mb-4"
             />
