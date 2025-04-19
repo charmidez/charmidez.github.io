@@ -10,7 +10,7 @@ const MenuItemMine = ({ label, href = '#', className = '' } : MenuItemProps) => 
     <li>
       <a
         href={href}
-        className={`text-violet-600 font-medium px-4 py-2 rounded transition duration-300 hover:bg-violet-600 hover:text-white ${className}`}
+        className={`text-violet-600 font-medium px-4 py-2 rounded transition duration-300 hover:bg-violet-600 hover:text-white active:bg-violet-600 ${className}`}
       >
         {label}
       </a>

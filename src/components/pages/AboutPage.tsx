@@ -1,29 +1,23 @@
-import ImageMine from "../ImageMine";
+import ImageMine from "../objects/ImageMine";
+import SectionMine from "../objects/SectionMine";
 
 function AboutPage() {
   return (
     <>
-      <section
-        id="about"
-        className="dark:bg-gray-900 py-16 px-4 sm:px-6 lg:px-8 bg-violet-50"
-      >
-        <h2 className="text-4xl font-extrabold text-violet-800 dark:text-white text-center">
+      <SectionMine idSectionMine="about" className="flex flex-col items-center justify-center dark:bg-gray-900 py-16 px-4 sm:px-6 lg:px-8 bg-violet-50 scroll-mt-16">
+      <h2 className="text-4xl font-extrabold text-violet-800 dark:text-white text-center">
           About Me
         </h2>
-        <section className="grid grid-cols-1 md:grid-cols-1 lg:grid-cols-3 gap-4 px-4">
+        <section className="grid grid-cols-1 md:grid-cols-1 lg:grid-cols-3 gap-4">
           {/* Colonne de gauche */}
           <div className=" p-16 rounded-lg">
             {/* Contenu à ajouter */}
-            <ImageMine src="/src/assets/setup3.jpg" alt="image" className="shadow-xl"/>
+            <ImageMine src="/src/assets/setup5.jpg" alt="image" className="shadow-xl"/>
           </div>
           {/* Colonne centrale (plus grande) */}
           <div className="p-6 rounded-lg col-span-1">
             {/* Contenu à ajouter */}
-            <img
-              src="/src/assets/profil.png"
-              alt="My Photo"
-              className="rounded-full w-32 h-32 mx-auto mb-4"
-            />
+            {/*<img src="/src/assets/profil.png" alt="My Photo" className="rounded-full w-32 h-32 mx-auto mb-4"/> */}
             <div className="max-w-4xl mx-auto text-center">
               <p className="text-lg text-gray-700 dark:text-gray-300 leading-relaxed">
                 Hi! I’m{" "}
@@ -60,10 +54,12 @@ function AboutPage() {
           {/* Colonne de droite */}
           <div className="p-15 rounded-lg pb-30 content-center">
             {/* Contenu à ajouter */}
-            <ImageMine src="/src/assets/setup4.jpg" alt="image" className="h-30 w-30"/>
+            <ImageMine src="/src/assets/setup6.jpg" alt="image" className="h-30 w-30"/>
           </div>
         </section>
-      </section>
+      </SectionMine>
+
+      
     </>
   );
 }

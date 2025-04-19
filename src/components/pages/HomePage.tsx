@@ -1,18 +1,17 @@
+import SectionMine from "../objects/SectionMine";
 
 
 function HomePage() {
   return (
     <>
       {/* class="row flex-lg-row-reverse align-items-center g-lg-5 py-5" */}
-      <div
-        className="rounded-lg py-8 px-8 flex flex-col lg:flex-row items-center pt-22 p-8 bg-[url('/src/assets/pattern.png')]"
-      >
+      <SectionMine idSectionMine="home" className="rounded-lg py-8 px-4 mt-16 sm:px-6 lg:px-8 flex flex-col lg:flex-row items-center bg-[url('/src/assets/pattern.png')] scroll-mt-16">
         <img
-          src="/src/assets/setup2.jpg"
+          src="/src/assets/profil.png"
           alt="Lights"
-          className="rounded-lg w-full max-w-md sm:max-w-lg lg:max-w-xl h-auto"
+          className="rounded-lg w-full max-w-md sm:max-w-lg lg:max-w-xl h-auto "
         />
-        <div className="flex flex-col m-8">
+        <div className="flex flex-col mt-2 md:ml-4 lg:ml-8">
           <h1 className="lg:text-6xl text-4xl font-black text-violet-950">
             Charmidez ASSIOBO
           </h1>
@@ -39,7 +38,7 @@ function HomePage() {
             </a>
           </div>
         </div>
-      </div>
+      </SectionMine>
     </>
   );
 }
