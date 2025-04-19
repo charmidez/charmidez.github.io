@@ -37,7 +37,7 @@ const CardProject: React.FC<CardProjectProps> = ({ imageSrc, title, description,
                 </div>
                 
                 <p className="text-gray-600" dangerouslySetInnerHTML={{ __html: description }}></p>
-                <a href={link} className="mt-4 text-blue-500 hover:underline justify-between mt-auto">
+                <a href={link} className="text-blue-500 hover:underline justify-between mt-auto">
                     <button className='btn bg-violet-500 text-white hover:bg-violet-800 w-full'>have a look at it</button>
                 </a>
             </div>

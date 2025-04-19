@@ -28,7 +28,56 @@ function ProjectsMine() {
           imageSrc="/src/assets/rec.png"
           title="REC LOGISTICS"
           description={recdescrion}
-          link=""
+          link="reclogistics.com"
+          logo="/src/assets/logorec.png"
+        />
+                <CardProject
+          imageSrc="/src/assets/rec.png"
+          title="REC LOGISTICS"
+          description={recdescrion}
+          link="reclogistics.com"
+          logo="/src/assets/logorec.png"
+        />
+                <CardProject
+          imageSrc="/src/assets/rec.png"
+          title="REC LOGISTICS"
+          description={recdescrion}
+          link="reclogistics.com"
+          logo="/src/assets/logorec.png"
+        />
+                <CardProject
+          imageSrc="/src/assets/rec.png"
+          title="REC LOGISTICS"
+          description={recdescrion}
+          link="reclogistics.com"
+          logo="/src/assets/logorec.png"
+        />
+                <CardProject
+          imageSrc="/src/assets/rec.png"
+          title="REC LOGISTICS"
+          description={recdescrion}
+          link="reclogistics.com"
+          logo="/src/assets/logorec.png"
+        />
+                <CardProject
+          imageSrc="/src/assets/rec.png"
+          title="REC LOGISTICS"
+          description={recdescrion}
+          link="reclogistics.com"
+          logo="/src/assets/logorec.png"
+        />
+                <CardProject
+          imageSrc="/src/assets/rec.png"
+          title="REC LOGISTICS"
+          description={recdescrion}
+          link="reclogistics.com"
+          logo="/src/assets/logorec.png"
+        />
+                <CardProject
+          imageSrc="/src/assets/rec.png"
+          title="REC LOGISTICS"
+          description={recdescrion}
+          link="reclogistics.com"
           logo="/src/assets/logorec.png"
         />
       </div>
