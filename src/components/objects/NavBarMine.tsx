@@ -1,5 +1,6 @@
 import ButtonMine from "./ButtonMine";
 import MenuItemMine from "./MenuItemMine";
+import SendMailButton from "./SendMailButton";
 
 function NavBarMine() {
   return (
@@ -43,7 +44,14 @@ function NavBarMine() {
           </ul>
         </div>
         <div className="navbar-end">
-            <ButtonMine text="e-Mail me" className="rounded-box" />
+            
+            <SendMailButton
+              to="charmidez.assiobo@gmail.com"
+              subject="Contact via Portfolio"
+              body="Bonjour Charmidez, je vous contacte depuis votre portfolio."
+            >
+              e-Mail me
+            </SendMailButton>
         </div>
     </div>
     </>
