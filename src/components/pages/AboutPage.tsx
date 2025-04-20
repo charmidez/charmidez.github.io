@@ -65,7 +65,7 @@ function AboutPage() {
 
     { name: "SQL", path: "/src/assets/sql.png" },
     { name: "MongoDB", path: "/src/assets/no-sql.png" },
-    { name: "NO-SQL", path: "/src/assets/no-sql2.png" },
+    { name: "NoSQL", path: "/src/assets/no-sql2.png" },
     
   ];
 
@@ -73,7 +73,7 @@ function AboutPage() {
     { name: "Teamwork", path: "/src/assets/workingroup.png" },
     { name: "Solve", path: "/src/assets/solving.png" },
     { name: "Talk", path: "/src/assets/communication.png" },
-    { name: "Adapt", path: "/src/assets/adapter.png" },
+    { name: "Adapter", path: "/src/assets/adapter.png" },
     { name: "Create", path: "/src/assets/creativity.png" },
     { name: "TTiming", path: "/src/assets/fastdelivery.png" },
     { name: "Lead", path: "/src/assets/leadership.png" },

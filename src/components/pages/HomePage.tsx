@@ -35,14 +35,21 @@ function HomePage() {
             Kotlin, along with their rich ecosystems and frameworks..
           </p>
           <div className="flex flex-row lg:flex-row justify-start">
-            <a href="#projects" className="mt-4 text-blue-500 hover:underline">
+            <a href="https://github.com/charmidez"
+              target="_blank"
+              rel="noopener noreferrer" className="mt-4 text-blue-500 hover:underline">
               <img
                 src="/src/assets/github.png"
                 alt="github"
                 className="h-10 w-10"
               />
             </a>
-            <a href="#projects" className="mt-4 text-blue-500 hover:underline">
+            <a
+              href="https://www.linkedin.com/in/charmidez-k-h-assiobo-95677a1b2/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="mt-4 text-blue-500 hover:underline"
+            >
               <img
                 src="/src/assets/linkedin.png"
                 alt="linkedIn"

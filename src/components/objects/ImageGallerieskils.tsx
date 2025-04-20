@@ -24,7 +24,7 @@ const ImageGallerySkills: React.FC<ImageGalleryProps> = ({ imagesSrc }) => {
             alt={`Gallery image ${index + 1}`}
             className="w-15 h-15 lg:w-30 lg:h-30 mb-2"
           />
-          <p className="text-center text-sm">{img.name}</p>
+          <p className="text-center font-bold text-sm">{img.name}</p>
         </div>
       ))}
     </div>

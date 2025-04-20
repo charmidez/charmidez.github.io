@@ -18,15 +18,15 @@ const CardProject: React.FC<CardProjectProps> = ({ imageSrc, title, description,
     };
 
     return (
-        <div className="card lg:card-side border-gray-300 rounded-lg shadow-sm">
+        <div className="card lg:card-side rounded-lg shadow-sm border-2 border-violet-600">
             {/* Left side: Image */}
-            <figure className="flex-1">
+            <figure className="flex-1 p-4 pr-0">
                 <img
                     src={imageSrc}
                     alt={title}
-                    className="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
+                    className="w-full h-full object-cover transition-transform duration-300 rounded-xs border-2 border-gray-300 hover:scale-105"
                     onClick={handleImageClick}
-                    style={{ cursor: 'pointer', transition: 'transform 0.3s ease' }} // Added inline styles for transition
+                    
                 />
             </figure>
             {/* Right side: Title and Description */}
@@ -37,7 +37,7 @@ const CardProject: React.FC<CardProjectProps> = ({ imageSrc, title, description,
                 </div>
                 
                 <p className="text-gray-600" dangerouslySetInnerHTML={{ __html: description }}></p>
-                <a href={link} className="card-actions justify-end text-blue-500 hover:underline justify-between mt-auto">
+                <a href={link} className="card-actions text-blue-500 justify-between mt-auto">
                     <button className='btn bg-violet-500 text-white hover:bg-violet-800 w-full'>have a look at it</button>
                 </a>
             </div>
