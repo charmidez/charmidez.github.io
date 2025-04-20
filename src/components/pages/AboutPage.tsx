@@ -75,7 +75,7 @@ function AboutPage() {
     { name: "Talk", path: "/assets/communication.png" },
     { name: "Adapter", path: "/assets/adapter.png" },
     { name: "Create", path: "/assets/creativity.png" },
-    { name: "TTiming", path: "/assets/fastdelivery.png" },
+    { name: "Timing", path: "/assets/fastdelivery.png" },
     { name: "Lead", path: "/assets/leadership.png" },
     { name: "Think", path: "/assets/critical-thinking.png" },
   ];

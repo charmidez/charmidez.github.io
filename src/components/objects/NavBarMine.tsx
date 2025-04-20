@@ -24,7 +24,7 @@ function NavBarMine() {
                 />{" "}
               </svg>
             </div>
-            <ul tabIndex={0} className="menu menu-sm dropdown-content bg-violet-200 rounded-box z-1 mt-3 w-52 p-2 shadow">
+            <ul tabIndex={0} className="menu menu-md dropdown-content bg-violet-200 rounded-box z-1 mt-3 w-52 p-2 shadow">
             <MenuItemMine label="Home" className="mx-0.5" href="#home"/>
             <MenuItemMine label="About" className="mx-0.5" href="#about"/>
             <MenuItemMine label="ProjectsMine" className="mx-0.5" href="#projects"/>
