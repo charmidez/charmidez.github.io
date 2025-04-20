@@ -21,46 +21,46 @@ function ProjectsMine() {
       </div>
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
         <CardProject
-          imageSrc="/src/assets/esag.png"
+          imageSrc="/assets/esag.png"
           title="ESAG NDE"
           description={esagdescription}
           link="https://esagnde.org/"
-          logo="/src/assets/logoesag.png"
+          logo="/assets/logoesag.png"
         />
         <CardProject
-          imageSrc="/src/assets/rec.png"
+          imageSrc="/assets/rec.png"
           title="REC LOGISTICS"
           description={recdescrion}
           link="https://reclogistics.com/"
-          logo="/src/assets/logorec.png"
+          logo="/assets/logorec.png"
         />
         <CardProject
-          imageSrc="/src/assets/228.png"
+          imageSrc="/assets/228.png"
           title="228 NEWS"
           description={recdescrion}
           link="https://228news.tg/"
-          logo="/src/assets/logo228.png"
+          logo="/assets/logo228.png"
         />
         <CardProject
-          imageSrc="/src/assets/relocationservice.png"
+          imageSrc="/assets/relocationservice.png"
           title="Relocation Service"
           description={recdescrion}
           link="https://relocationserviceyenke.com/"
-          logo="/src/assets/logorelocation.png"
+          logo="/assets/logorelocation.png"
         />
         <CardProject
-          imageSrc="/src/assets/yemag.png"
+          imageSrc="/assets/yemag.png"
           title="YEMAG"
           description={recdescrion}
           link="https://yemag-uni.com/"
-          logo="/src/assets/logoyemag.jpg"
+          logo="/assets/logoyemag.jpg"
         />
         <CardProject
-          imageSrc="/src/assets/srnde.png"
+          imageSrc="/assets/srnde.png"
           title="SOEURS NDE TOGO"
           description={recdescrion}
           link="https://soeurndetogo.com/"
-          logo="/src/assets/logosrnde.png"
+          logo="/assets/logosrnde.png"
         />
       </div>
     </SectionMine>

@@ -31,53 +31,53 @@ function AboutPage() {
 */
 
   const imagesTechnicalSkills = [
-    { name: "Kotlin", path: "/src/assets/kotlin.png" },
-    { name: "ANDROID", path: "/src/assets/android.png" },
-    { name: "XML", path: "/src/assets/xml.png" },
-    { name: "JetPack", path: "/src/assets/jetpack.svg" },
-    { name: "KTOR", path: "/src/assets/ktor.png" },
+    { name: "Kotlin", path: "/assets/kotlin.png" },
+    { name: "ANDROID", path: "/assets/android.png" },
+    { name: "XML", path: "/assets/xml.png" },
+    { name: "JetPack", path: "/assets/jetpack.svg" },
+    { name: "KTOR", path: "/assets/ktor.png" },
 
-    { name: "HTML", path: "/src/assets/html.png" },
-    { name: "CSS", path: "/src/assets/css.png" },
-    { name: "Typescript", path: "/src/assets/typescript.png" },
-    { name: "Javascript", path: "/src/assets/javascript.png" },
-    { name: "NodeJS", path: "/src/assets/node.png" },
-    { name: "ReactJS", path: "/src/assets/react.svg" },
-    { name: "NextJS", path: "/src/assets/next.png" },
-    { name: "VueJS", path: "/src/assets/vuejs.png" },
-    { name: "Gatsby", path: "/src/assets/gatsbyjs.png" },
-    { name: "TailwindCSS", path: "/src/assets/tailwind.png" },
-    { name: "DaisyUI", path: "/src/assets/daisy.png" },
-    { name: "JSON", path: "/src/assets/json.png" },
-
-
-    { name: "PHP", path: "/src/assets/php.png" },
-    { name: "wordpress", path: "/src/assets/wordpress.png" },
+    { name: "HTML", path: "/assets/html.png" },
+    { name: "CSS", path: "/assets/css.png" },
+    { name: "Typescript", path: "/assets/typescript.png" },
+    { name: "Javascript", path: "/assets/javascript.png" },
+    { name: "NodeJS", path: "/assets/node.png" },
+    { name: "ReactJS", path: "/assets/react.svg" },
+    { name: "NextJS", path: "/assets/next.png" },
+    { name: "VueJS", path: "/assets/vuejs.png" },
+    { name: "Gatsby", path: "/assets/gatsbyjs.png" },
+    { name: "TailwindCSS", path: "/assets/tailwind.png" },
+    { name: "DaisyUI", path: "/assets/daisy.png" },
+    { name: "JSON", path: "/assets/json.png" },
 
 
-    { name: "Python3", path: "/src/assets/python.png" },
-    { name: "Django", path: "/src/assets/django.png" },
-    { name: "SQLite", path: "/src/assets/sqlite.png" },
-    { name: "PostgreSQL", path: "/src/assets/postgresql.png" },
+    { name: "PHP", path: "/assets/php.png" },
+    { name: "wordpress", path: "/assets/wordpress.png" },
+
+
+    { name: "Python3", path: "/assets/python.png" },
+    { name: "Django", path: "/assets/django.png" },
+    { name: "SQLite", path: "/assets/sqlite.png" },
+    { name: "PostgreSQL", path: "/assets/postgresql.png" },
     
-    { name: "GCP", path: "/src/assets/g-cloud.png" },
-    { name: "Apache", path: "/src/assets/apache.png" },
+    { name: "GCP", path: "/assets/g-cloud.png" },
+    { name: "Apache", path: "/assets/apache.png" },
 
-    { name: "SQL", path: "/src/assets/sql.png" },
-    { name: "MongoDB", path: "/src/assets/no-sql.png" },
-    { name: "NoSQL", path: "/src/assets/no-sql2.png" },
+    { name: "SQL", path: "/assets/sql.png" },
+    { name: "MongoDB", path: "/assets/no-sql.png" },
+    { name: "NoSQL", path: "/assets/no-sql2.png" },
     
   ];
 
   const imagesSoftSkills = [
-    { name: "Teamwork", path: "/src/assets/workingroup.png" },
-    { name: "Solve", path: "/src/assets/solving.png" },
-    { name: "Talk", path: "/src/assets/communication.png" },
-    { name: "Adapter", path: "/src/assets/adapter.png" },
-    { name: "Create", path: "/src/assets/creativity.png" },
-    { name: "TTiming", path: "/src/assets/fastdelivery.png" },
-    { name: "Lead", path: "/src/assets/leadership.png" },
-    { name: "Think", path: "/src/assets/critical-thinking.png" },
+    { name: "Teamwork", path: "/assets/workingroup.png" },
+    { name: "Solve", path: "/assets/solving.png" },
+    { name: "Talk", path: "/assets/communication.png" },
+    { name: "Adapter", path: "/assets/adapter.png" },
+    { name: "Create", path: "/assets/creativity.png" },
+    { name: "TTiming", path: "/assets/fastdelivery.png" },
+    { name: "Lead", path: "/assets/leadership.png" },
+    { name: "Think", path: "/assets/critical-thinking.png" },
   ];
 
   return (
@@ -94,7 +94,7 @@ function AboutPage() {
           <div className=" rounded-lg">
             {/* Contenu à ajouter */}
             <ImageMine
-              src="/src/assets/setup5.jpg"
+              src="/assets/setup5.jpg"
               alt="image"
               className="shadow-xl"
             />
@@ -140,7 +140,7 @@ function AboutPage() {
           <div className="rounded-lg content-center">
             {/* Contenu à ajouter */}
             <ImageMine
-              src="/src/assets/setup6.jpg"
+              src="/assets/setup6.jpg"
               alt="image"
               className="h-30 w-30"
             />

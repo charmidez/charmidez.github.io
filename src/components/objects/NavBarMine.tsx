@@ -31,7 +31,7 @@ function NavBarMine() {
             <MenuItemMine label="Contact" className="mx-0.5" href="#contact"/>
             </ul>
           </div>
-          <img src='/src/assets/logowhite.png' alt="Logo" className="h-8 w-8 object-contain mr-2"/>
+          <img src='/assets/logowhite.png' alt="Logo" className="h-8 w-8 object-contain mr-2"/>
           <a className="font-bold lg:text-2xl text-white">CHARMIDEZ</a>
         </div>
         <div className="navbar-center hidden lg:flex">

@@ -7,7 +7,7 @@ function HomePage() {
       {/* class="row flex-lg-row-reverse align-items-center g-lg-5 py-5" */}
       <SectionMine
         idSectionMine="home"
-        className="rounded-lg py-8 px-4 mt-16 sm:px-6 lg:px-32 flex flex-col lg:flex-row items-center bg-[url('/src/assets/pattern.png')] scroll-mt-16"
+        className="rounded-lg py-8 px-4 mt-16 sm:px-6 lg:px-32 flex flex-col lg:flex-row items-center bg-[url('/assets/pattern.png')] scroll-mt-16"
       >
         {/*
                 <img
@@ -18,7 +18,7 @@ function HomePage() {
         */}
 
         <ImageMine
-          src="/src/assets/PhotoMoi.png"
+          src="/assets/PhotoMoi.png"
           alt="Lights"
           className="rounded-lg w-full h-full sm:w-80 sm:h-80 lg:w-full lg:h-full object-cover"
         />
@@ -39,7 +39,7 @@ function HomePage() {
               target="_blank"
               rel="noopener noreferrer" className="mt-4 text-blue-500 hover:underline">
               <img
-                src="/src/assets/github.png"
+                src="/assets/github.png"
                 alt="github"
                 className="h-10 w-10"
               />
@@ -51,7 +51,7 @@ function HomePage() {
               className="mt-4 text-blue-500 hover:underline"
             >
               <img
-                src="/src/assets/linkedin.png"
+                src="/assets/linkedin.png"
                 alt="linkedIn"
                 className="h-10 w-10"
               />
