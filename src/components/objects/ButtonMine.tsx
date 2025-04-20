@@ -9,7 +9,7 @@ interface ButtonProps {
 const ButtonMine: React.FC<ButtonProps> = ({ text, onClick, className }) => {
   return (
     <button
-      className={`rounded text-white font-light lg:py-2 lg:px-4 transition duration-300 ease-in-out transform hover:bg-white hover:scale-105 hover:font-bold hover:text-violet-800 ${className}`}
+      className={`rounded text-white font-light py-2 px-4 lg:py-4 lg:px-8 transition duration-300 ease-in-out transform hover:bg-white hover:scale-105 hover:font-bold hover:text-violet-800 ${className}`}
       onClick={onClick}
     >
       {text}

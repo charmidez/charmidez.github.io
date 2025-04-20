@@ -43,7 +43,7 @@ function NavBarMine() {
           </ul>
         </div>
         <div className="navbar-end">
-            <ButtonMine text="e-Mail me" className="rounded-box px-8 py-3" />
+            <ButtonMine text="e-Mail me" className="rounded-box" />
         </div>
     </div>
     </>
