@@ -4,7 +4,7 @@ import MenuItemMine from "./MenuItemMine";
 function NavBarMine() {
   return (
     <>
-    <div className="navbar bg-violet-700 flex justify-center items-center mx-auto px-8 mb-2 fixed top-0 z-0">
+    <div className="navbar bg-violet-700 flex justify-center items-center mx-auto px-4 lg:px-32 mb-2 fixed top-0 z-50">
         <div className="navbar-start">
           <div className="dropdown">
             <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden bg-violet-200 rounded mr-1">
