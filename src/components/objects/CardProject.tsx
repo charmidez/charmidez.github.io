@@ -20,11 +20,11 @@ const CardProject: React.FC<CardProjectProps> = ({ imageSrc, title, description,
     return (
         <div className="card lg:card-side rounded-lg shadow-sm border-2 border-violet-600">
             {/* Left side: Image */}
-            <figure className="flex-1 p-4 pr-0">
+            <figure className="flex-1 p-4 lg:pr-0">
                 <img
                     src={imageSrc}
                     alt={title}
-                    className="w-full h-full object-cover transition-transform duration-300 rounded-xs border-2 border-gray-300 hover:scale-105"
+                    className="w-full h-full object-contain transition-transform duration-300 rounded-xs border-2 border-gray-300 hover:scale-105"
                     onClick={handleImageClick}
                     
                 />
