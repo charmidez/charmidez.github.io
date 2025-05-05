@@ -1,4 +1,5 @@
 
+import { Link } from "react-router-dom";
 import MenuItemMine from "./MenuItemMine";
 import SendMailButton from "./SendMailButton";
 
@@ -26,10 +27,10 @@ function NavBarMine() {
               </svg>
             </div>
             <ul tabIndex={0} className="menu menu-md dropdown-content bg-violet-200 rounded-box z-1 mt-3 w-52 p-2 shadow">
-            <MenuItemMine label="Home" className="mx-0.5" href="#home"/>
-            <MenuItemMine label="About" className="mx-0.5" href="#about"/>
-            <MenuItemMine label="ProjectsMine" className="mx-0.5" href="#projects"/>
-            <MenuItemMine label="Contact" className="mx-0.5" href="#contact"/>
+            <MenuItemMine label="Home" className="mx-0.5" href="/"/>
+            <MenuItemMine label="About" className="mx-0.5" href="/about"/>
+            <MenuItemMine label="ProjectsMine" className="mx-0.5" href="/projectmine"/>
+            <MenuItemMine label="Contact" className="mx-0.5" href="/contact"/>
             </ul>
           </div>
           <img src='/assets/logowhite.png' alt="Logo" className="h-8 w-8 object-contain mr-2"/>
@@ -37,10 +38,10 @@ function NavBarMine() {
         </div>
         <div className="navbar-center hidden lg:flex">
           <ul className="menu menu-horizontal bg-violet-100 rounded-box">
-            <MenuItemMine label="Home" className="mx-0.5" href="#home"/>
-            <MenuItemMine label="About" className="mx-0.5" href="#about"/>
-            <MenuItemMine label="ProjectsMine" className="mx-0.5" href="#projects"/>
-            <MenuItemMine label="Contact" className="mx-0.5" href="#contact"/>
+            <MenuItemMine label="Home" className="mx-0.5" href="/"/>
+            <MenuItemMine label="About" className="mx-0.5" href="/about"/>
+            <MenuItemMine label="ProjectsMine" className="mx-0.5" href="/projectmine"/>
+            <MenuItemMine label="Contact" className="mx-0.5" href="/contact"/>
           </ul>
         </div>
         <div className="navbar-end">
