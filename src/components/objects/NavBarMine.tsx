@@ -1,5 +1,5 @@
 
-import { Link } from "react-router-dom";
+//import { Link } from "react-router-dom";
 import MenuItemMine from "./MenuItemMine";
 import SendMailButton from "./SendMailButton";
 
@@ -10,6 +10,7 @@ function NavBarMine() {
         <div className="navbar-start">
           <div className="dropdown">
             <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden bg-violet-200 rounded mr-1">
+              
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 className="h-5 w-5"
@@ -45,7 +46,6 @@ function NavBarMine() {
           </ul>
         </div>
         <div className="navbar-end">
-            
             <SendMailButton
               to="charmidez.assiobo@gmail.com"
               subject="Contact via Portfolio"

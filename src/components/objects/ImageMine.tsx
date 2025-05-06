@@ -40,7 +40,7 @@ const ImageMine: React.FC<ImageMineProps> = ({ src, alt, className }) => {
         transition: "border-radius 0.9s ease",
       }}
     >
-      <img src={src} alt={alt || "Image"} className={` h-full w-full object-cover ${className}`} />
+      <img src={src} alt={alt || "Image"} className={`object-cover ${className}`} />
     </div>
   );
 };

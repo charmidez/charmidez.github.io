@@ -84,7 +84,7 @@ function AboutPage() {
     <>
       <SectionMine
         idSectionMine="about"
-        className="flex flex-col items-center justify-center dark:bg-gray-900 py-16 px-4 sm:px-6 lg:px-32 bg-violet-50 scroll-mt-16"
+        className="flex flex-col items-center justify-center dark:bg-gray-900 pb-16 px-4 lg:px-32 bg-violet-50 pt-24"
       >
         <h2 className="text-4xl font-extrabold text-violet-800 dark:text-white text-center mb-4">
           About Me
