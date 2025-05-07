@@ -1,7 +1,6 @@
-import ImageGallery from "../objects/ImageGallerie";
-import ImageMine from "../objects/ImageMine";
-import SectionMine from "../objects/SectionMine";
-import ImageGallerySkills from "../objects/ImageGallerieskils";
+import ImageGallery from "../ui/ImageGallerie";
+import ImageMine from "../ui/ImageMine";
+import ImageGallerySkills from "../ui/ImageGallerieskils";
 
 function AboutPage() {
   /*
@@ -82,8 +81,7 @@ function AboutPage() {
 
   return (
     <>
-      <SectionMine
-        idSectionMine="about"
+      <section
         className="flex flex-col items-center justify-center dark:bg-gray-900 pb-16 px-4 lg:px-32 bg-violet-50 pt-24"
       >
         <h2 className="text-4xl font-extrabold text-violet-800 dark:text-white text-center mb-4">
@@ -160,7 +158,7 @@ function AboutPage() {
           <ImageGallerySkills imagesSrc={imagesSoftSkills}/>
         </div>
 
-      </SectionMine>
+      </section>
     </>
   );
 }

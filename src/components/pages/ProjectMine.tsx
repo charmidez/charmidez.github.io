@@ -1,5 +1,5 @@
-import CardProject from "../objects/CardProject";
-import SectionMine from "../objects/SectionMine";
+import CardProject from "../ui/CardProject";
+
 
 const esagdescription =
   "<ul><li><strong>Website creation</strong></li><li><strong>Implementation of registration forms</strong></li><li><strong>Staff training for site management</strong></li></ul><p><em>WordPress – ReactJS – BootstrapCSS</em></p>";
@@ -9,8 +9,7 @@ const recdescrion =
 
 function ProjectsMine() {
   return (
-    <SectionMine
-      idSectionMine="projects"
+    <section
       className="flex flex-col items-center justify-center py-16 px-4 sm:px-6 lg:px-32 scroll-mt-16"
     >
       <div className="text-center">
@@ -63,7 +62,7 @@ function ProjectsMine() {
           logo="/assets/logosrnde.png"
         />
       </div>
-    </SectionMine>
+    </section>
   );
 }
 

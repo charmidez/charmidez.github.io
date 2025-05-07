@@ -1,0 +1,11 @@
+
+              {descPargrCard.map((text, index) => (
+                <p
+                  key={index}
+                  className={` ${
+                    index === descPargrCard.length - 1 ? "font-semibold" : ""
+                  } `}
+                >
+                  {text}
+                </p>
+              ))}
