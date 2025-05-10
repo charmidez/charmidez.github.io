@@ -51,16 +51,16 @@ export function SectionPresentation() {
               {homePageDataPresentation.subtitle}
             </h3>
           </div>
-          <div className="flex flex-row lg:flex-row lg:justify-start gap-2 lg:gap-4 justify-center items-center">
+          <div className="flex flex-row lg:flex-row lg:justify-start gap-2 lg:gap-4 justify-center items-center w-full">
             <a
               href=""
-              className="bg-white hover:bg-violet-600 hover:text-white text-violet-600 text-sm lg:text-lg border-2 font-semibold py-2 px-4 rounded hover:rounded hover:border-2 hover:border-violet-600 transition duration-300 ease-in-out"
+              className=" w-fit bg-white hover:bg-violet-600 hover:text-white text-violet-600 text-sm lg:text-lg border-2 font-semibold py-2 px-4 rounded hover:rounded hover:border-2 hover:border-violet-600 transition duration-300 ease-in-out"
             >
               Télecharger mon CV
             </a>
             <a
               href=""
-              className="bg-violet-600 text-white font-semibold py-2 text-sm lg:text-lg px-4 rounded border-2 border-violet-600"
+              className=" w-fit   bg-violet-600 text-white font-semibold py-2 text-sm lg:text-lg px-4 rounded border-2 border-violet-600"
             >
               A Propos de moi
             </a>
@@ -77,7 +77,7 @@ export function SectionActualite() {
       <Titresection titre={homePageDataActualite.title} className="justify-center"/>
       <div className="">
         {homePageDataActualite.articles && (
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 lg:gap-8 gap-4">
             {homePageDataActualite.articles.map((article, index) => (
               <Cardsimple key={index} titreCard={article.titre} resume={article.resume} imgSrc={article.image} button="Lire plus" />
             ))}
@@ -89,3 +89,5 @@ export function SectionActualite() {
     </SectionDivMine>
   );
 }
+
+

@@ -1,4 +1,4 @@
-import MineImage from "./MineImage";
+
 
 type TitresectionProps = {
   titre: string;
@@ -25,7 +25,7 @@ type SectionDivProps = {
 export function SectionDivMine({ children, className }: SectionDivProps) {
   return (
     <div
-      className={`flex flex-col justify-center lg:px-16 py-8 lg:gap-4 gap-2 ${className}`}
+      className={`flex flex-col justify-center lg:px-16 py-8 px-4 lg:gap-4 gap-2 ${className}`}
     >
       {children}
     </div>
@@ -49,21 +49,21 @@ export function Cardsimple({
 }: CardsimpleProps) {
   return (
     <>
-<div className="card card-side bg-base-100 shadow-sm">
-  <figure>
-    <img
-      src={imgSrc}
-      alt={titreCard} />
-  </figure>
-  <div className="card-body">
-    <h2 className="card-title">{titreCard}</h2>
-    <p>{resume}</p>
-    <p>{date}</p>
-    <div className="card-actions justify-end">
-      <button className="btn btn-neutral">{button}</button>
-    </div>
-  </div>
-</div>
+      <div className="card shadow-sm bg-violet-100 lg:card-side lg:card-md card-sm rounded-lg">
+        <figure>
+          <img src={imgSrc} alt={titreCard} className="w-full h-40 lg:w-40 lg:h-full object-cover lg:rounded-none" />
+        </figure>
+
+
+        <div className="card-body flex-1 p-4 flex flex-col justify-start">
+          <h2 className="card-title">{titreCard}</h2>
+          <p className="text-gray-600">{resume}</p>
+          <p>{date}</p>
+          <a className="card-actions justify-end">
+            <button className="btn bg-violet-600 w-full text-white">{button}</button>
+          </a>
+        </div>
+      </div>
     </>
   );
 }

@@ -3,3 +3,11 @@
 @plugin "daisyui" {
     themes: all;
   }
+
+
+
+@theme {
+  --color-regal-blue: rgba(255, 0, 0, 0.1); 
+  --color-transparent-violet : rgba(138, 43, 226, 0.1);
+  --color-transparent-bottom : rgba(196, 181, 253, 0.9);
+}

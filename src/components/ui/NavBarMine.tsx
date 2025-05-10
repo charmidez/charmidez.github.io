@@ -38,10 +38,10 @@ function NavBarMine() {
           <a className="font-bold lg:text-2xl text-white">CHARMIDEZ</a>
         </div>
         <div className="navbar-center hidden lg:flex">
-          <ul className="menu menu-horizontal bg-violet-100 rounded-box">
-            <MenuItemMine label="Home" className="mx-0.5" href="/"/>
-            <MenuItemMine label="About" className="mx-0.5" href="/about"/>
-            <MenuItemMine label="ProjectsMine" className="mx-0.5" href="/projectmine"/>
+          <ul className="menu menu-horizontal rounded-box">
+            <MenuItemMine label="Acceuil" className="mx-0.5" href="/"/>
+            <MenuItemMine label="À Propos" className="mx-0.5" href="/about"/>
+            <MenuItemMine label="Projects" className="mx-0.5" href="/projectmine"/>
             <MenuItemMine label="Contact" className="mx-0.5" href="/contact"/>
           </ul>
         </div>
