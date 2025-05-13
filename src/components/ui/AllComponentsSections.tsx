@@ -9,7 +9,7 @@ export function Titresection({ titre, className }: TitresectionProps) {
   return (
     <div className="flex flex-col items-center justify-center">
       <h2
-        className={`text-violet-600 lg:text-3xl md:text-2xl text-xl font-semibold uppercase ${className} `}
+        className={`text-violet-600 lg:text-3xl md:text-2xl text-xl font-semibold uppercase lg:pb-4 md:pb-4 pb-2 ${className} `}
       >
         {titre}
       </h2>

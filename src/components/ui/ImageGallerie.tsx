@@ -18,7 +18,7 @@ const ImageGallery: React.FC<ImageGalleryProps> = ({ imagesSrc }) => {
       {imagesSrc.slice(0, imagesCount).map((img, index) => (
         <div
           key={index}
-          className="w-full bg-white aspect-square overflow-hidden hover:scale-105 transition-transform duration-300 flex flex-col items-center justify-center lg:p-4 p-2"
+          className="w-full bg-white aspect-square overflow-hidden  transition-transform duration-300 flex flex-col items-center justify-center lg:p-4 p-2"
         >
           <img
             src={img.path}

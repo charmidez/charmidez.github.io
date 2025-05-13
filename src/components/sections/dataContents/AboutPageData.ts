@@ -4,44 +4,152 @@ export const imagesSoftSkills = [
   { name: "Fiabilité ", path: "/assets/icon/about3.svg" },
 ];
 
+export const imagesAPI = [
+  { name: "KTOR", path: "/assets/ktor.png", niveau: "Avancé" },
+  { name: "Python3", path: "/assets/python.png", niveau: "Intermédiaire" },
+  { name: "Django", path: "/assets/django.png", niveau: "Intermédiaire" },
+  {
+    name: "PostgreSQL",
+    path: "/assets/postgresql.png",
+    niveau: "Intermédiaire",
+  },
+  { name: "GCP", path: "/assets/g-cloud.png", niveau: "Intermédiaire" },
+  { name: "MongoDB", path: "/assets/no-sql.png", niveau: "Intermédiaire" },
+  { name: "NoSQL", path: "/assets/no-sql2.png", niveau: "Intermédiaire" },
+  { name: "Github", path: "/assets/icon/github.svg", niveau: "Intermédiaire" },
+];
+
+export const imagesUiUX = [
+  { name: "Kotlin", path: "/assets/kotlin.png", niveau: "Avancé" },
+  { name: "Compose", path: "/assets/jetpack.svg", niveau: "Avancé" },
+  { name: "Typescript", path: "/assets/typescript.png", niveau: "Avancé" },
+  { name: "ReactJS", path: "/assets/react.svg", niveau: "Avancé" },
+  { name: "NextJS", path: "/assets/next.png", niveau: "Avancé" },
+  {
+    name: "TailwindCSS",
+    path: "/assets/tailwind.png",
+    niveau: "Intermédiaire",
+  },
+  { name: "Gatsby", path: "/assets/gatsbyjs.png", niveau: "Intermédiaire" },
+  { name: "wordpress", path: "/assets/wordpress.png", niveau: "Intermédiaire" },
+
+  //{ name: "HTML", path: "/assets/html.png" },
+  //{ name: "CSS", path: "/assets/css.png" },
+  //{ name: "Javascript", path: "/assets/javascript.png" },
+  //{ name: "NodeJS", path: "/assets/node.png" },
+  //{ name: "ANDROID", path: "/assets/android.png" },
+  //{ name: "XML", path: "/assets/xml.png" },
+  //{ name: "VueJS", path: "/assets/vuejs.png" },
+  //{ name: "DaisyUI", path: "/assets/daisy.png" },
+  //{ name: "JSON", path: "/assets/json.png" },
+  //{ name: "PHP", path: "/assets/php.png" },
+  //{ name: "SQLite", path: "/assets/sqlite.png" },
+  //{ name: "Apache", path: "/assets/apache.png" },
+  //{ name: "SQL", path: "/assets/sql.png" },
+  //{ name: "NoSQL", path: "/assets/no-sql2.png" },
+];
+
+export const imagesAutresCompetences = [
+  {
+    name: "Photoshop",
+    path: "/assets/icon/photoshop.svg",
+    niveau: "Intermédiaire",
+  },
+  { name: "Figma", path: "/assets/icon/figma.svg", niveau: "Bases" },
+  { name: "BitWig", path: "/assets/icon/bitwig.png", niveau: "Avancé" },
+];
+
+/*
+export const experiences = [
+  {
+    //Développeur full stack
+    title: "Développeur Full Stack",
+    entreprise: "Groupe UNICOM AFRICA",
+    date: "Février 2020 - Juin 2021 | 1 ans 5 mois",
+    description: "Développement d'applications web et mobiles",
+    details: [
+      `Création et maintenance de site web (reclogistics.com – esagnde.org – 228news.tg – yemag-uni.com – mchloebeauty.com – robusteconsulte.com).`,
+      `Création et maintenance d’application mobile Android (J’obtiens mon permis – Whatsapp Saver Status – Rec Container Tracking).`,
+      `Conception d’API d’une application de gestion scolaire pour ESIG Global Succès.`,
+    ],
+  },
+
+  {
+    //Developpeur web Front-End, Back-End. React
+    title: "Developpeur web Front-End, Back-End. React ",
+    entreprise: "Freelance",
+    date: "Juin 2021 - Présent | 4 ans",
+    description: "Développement d'applications web et mobiles",
+    details: [
+      `Ayant rejoint l’équipe de développement informatique, nous avons créé des applications et sites web dont : unicomafrica.com – sgitogo.tg – isdi-togo.com - audaceconseil.com`,
+    ],
+  },
+
+  {
+    //Developpeur web
+    title: "Développeur Full Stack",
+    entreprise: "Rec Logistics - Consultant",
+    date: "Décembre 2018 - Février 2020 | 4 ans",
+    description: "Développement d'applications web et mobiles",
+    details: [
+      `En tant que consultant, j'ai été chargé de la création et de la maintenance de l'application web de gestion des conteneurs pour REC Logistics.`,
+    ],
+  },
+];
+*/
+
+export const data = {
+  experiences: [
+    {
+    //Développeur full stack
+    title: "Développeur Full Stack",
+    entreprise: "Groupe UNICOM AFRICA",
+    date: "Février 2020 - Juin 2021 | 1 ans 5 mois",
+    description: "Développement d'applications web et mobiles",
+    details: [
+      `Création et maintenance de site web (reclogistics.com – esagnde.org – 228news.tg – yemag-uni.com – mchloebeauty.com – robusteconsulte.com).`,
+      `Création et maintenance d’application mobile Android (J’obtiens mon permis – Whatsapp Saver Status – Rec Container Tracking).`,
+      `Conception d’API d’une application de gestion scolaire pour ESIG Global Succès.`,
+    ],
+  },
+
+  {
+    //Developpeur web Front-End, Back-End. React
+    title: "Developpeur web Front-End, Back-End. React ",
+    entreprise: "Freelance",
+    date: "Juin 2021 - Présent | 4 ans",
+    description: "Développement d'applications web et mobiles",
+    details: [
+      `Ayant rejoint l’équipe de développement informatique, nous avons créé des applications et sites web dont : unicomafrica.com – sgitogo.tg – isdi-togo.com - audaceconseil.com`,
+    ],
+  },
+
+  {
+    //Developpeur web
+    title: "Développeur Full Stack",
+    entreprise: "Rec Logistics - Consultant",
+    date: "Décembre 2018 - Février 2020 | 4 ans",
+    description: "Développement d'applications web et mobiles",
+    details: [
+      `En tant que consultant, j'ai été chargé de la création et de la maintenance de l'application web de gestion des conteneurs pour REC Logistics.`,
+    ],
+  },
+  ],
+  formations: [
+    { title: "Android (Kotlin)", description: "Apps natives avec Jetpack Compose." },
+    { title: "Flutter", description: "Développement multiplateforme rapide." }
+  ],
+  parcours: [
+    { title: "UI/UX", description: "Maquettes Figma, design centré utilisateur." },
+    { title: "Tailwind CSS", description: "Stylisation rapide et responsive." }
+  ]
+};
 
 
-export   const imagesTechnicalSkills = [
-    //{ name: "Kotlin", path: "/assets/kotlin.png" },
-    //{ name: "ANDROID", path: "/assets/android.png" },
-    //{ name: "XML", path: "/assets/xml.png" },
+export type TabKey = 'formations' | 'experiences' | 'parcours';
 
-    { name: "Compose Multiplatform", path: "/assets/jetpack.svg", niveau: "Intermédiaire" },
-    { name: "KTOR, Backend", path: "/assets/ktor.png", niveau: "Intermédiaire" },
-
-    //{ name: "HTML", path: "/assets/html.png" },
-    //{ name: "CSS", path: "/assets/css.png" },
-    //{ name: "Typescript", path: "/assets/typescript.png" },
-    //{ name: "Javascript", path: "/assets/javascript.png" },
-    //{ name: "NodeJS", path: "/assets/node.png" },
-    { name: "ReactJS", path: "/assets/react.svg", niveau: "Intermédiaire" },
-
-
-    //{ name: "NextJS", path: "/assets/next.png" },
-    //{ name: "VueJS", path: "/assets/vuejs.png" },
-    //{ name: "Gatsby", path: "/assets/gatsbyjs.png" },
-    //{ name: "TailwindCSS", path: "/assets/tailwind.png" },
-    //{ name: "DaisyUI", path: "/assets/daisy.png" },
-    //{ name: "JSON", path: "/assets/json.png" },
-
-    //{ name: "PHP", path: "/assets/php.png" },
-    { name: "wordpress", path: "/assets/wordpress.png", niveau: "Intermédiaire" },
-
-    //{ name: "Python3", path: "/assets/python.png" },
-    { name: "Django", path: "/assets/django.png", niveau: "Intermédiaire" },
-    //{ name: "SQLite", path: "/assets/sqlite.png" },
-    
-    { name: "PostgreSQL", path: "/assets/postgresql.png" },
-    { name: "GCP", path: "/assets/g-cloud.png" },
-    //{ name: "Apache", path: "/assets/apache.png" },
-
-    //{ name: "SQL", path: "/assets/sql.png" },
-    { name: "MongoDB", path: "/assets/no-sql.png" },
-    //{ name: "NoSQL", path: "/assets/no-sql2.png" },
-  ];
-
+export const tabs : { key: TabKey; label: string }[] = [
+  { key: "formations", label: "Formations" },
+  { key: "experiences", label: "Expériences" },
+  { key: "parcours", label: "Parcours" }
+];

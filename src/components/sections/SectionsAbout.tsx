@@ -2,20 +2,30 @@ import { Link } from "react-router-dom";
 import ImageGallery from "../ui/ImageGallerie";
 import ImageGallerySkills from "../ui/ImageGallerieskils";
 
+import SectionParcoursCard from "../ui/ParcoursCard";
+
 import {
+  imagesAPI,
+  imagesAutresCompetences,
   imagesSoftSkills,
-  imagesTechnicalSkills,
+  imagesUiUX,
+  tabs,
+  data,
 } from "../sections/dataContents/AboutPageData";
+
+import { Titresection } from "../ui/AllComponentsSections";
+
+import { useState } from "react";
+import { AnimatePresence, motion } from "framer-motion";
+//import { motion, AnimatePresence } from "framer-motion";
 
 {
   /*A propos de moi*/
 }
 export function SectionAbout() {
   return (
-    <div className="">
-      <h2 className="text-4xl font-extrabold text-violet-800 dark:text-white text-center mb-4">
-        A propos de moi
-      </h2>
+    <div>
+      <Titresection titre="A propos de moi" />
       <section className="w-full flex flex-col lg:flex-row lg:gap-8 gap-4">
         {/* Colonne de gauche */}
         <div className="items-center justify-center flex">
@@ -88,33 +98,76 @@ export function SectionAbout() {
 export function SectionCompetences() {
   return (
     <div>
-      <h2 className="text-4xl font-extrabold text-violet-800 dark:text-white text-center mb-4">
-        Mes compétences
-      </h2>
-
-      <section className="flex flex-col lg:flex-row gap-4 lg:gap-8 w-full">
-        <div>
+      <Titresection titre="Mes compétences" />
+      <section className="flex flex-col lg:flex-row gap-2 lg:gap-8 w-full">
+        {/*Front End */}
+        <div className="flex-1 flex-col gap-2 lg:gap-4 rounded-3xl p-2 border-2 border-violet-100">
           {/*Technical skill*/}
-          <h2 className="p-4  bg-violet-100 text-violet-600 rounded-2xl my-4 text-center w-full ">
-            Développement Web et Mobile
+          <h2 className="p-4  bg-violet-100 text-violet-600 rounded-2xl text-center w-full ">
+            Front End - UI/UX
           </h2>
-          <ImageGallery imagesSrc={imagesTechnicalSkills} />
+          <ImageGallery imagesSrc={imagesUiUX} />
         </div>
 
-        <div>
+        {/*Back End*/}
+        <div className="flex-1 flex-col gap-2 lg:gap-4 rounded-3xl p-2 border-2 border-violet-100">
           {/*Technical skill*/}
-          <h2 className="p-4  bg-violet-100 text-violet-600 rounded-2xl my-4 text-center w-full ">
-            Autres compétences complémentaires
+          <h2 className="p-4  bg-violet-100 text-violet-600 rounded-2xl text-center w-full ">
+            Back End - API - CI/CD
           </h2>
-          <ImageGallery imagesSrc={imagesTechnicalSkills} />
+          <ImageGallery imagesSrc={imagesAPI} />
         </div>
 
-        <div>
-          {/*Technical skill*/}
-          <h2 className="p-4  bg-violet-100 text-violet-600 rounded-2xl my-4 text-center w-full ">
-            Autres compétences complémentaires
+        <div className="flex-1 flex-col gap-2 lg:gap-4 rounded-3xl p-2 border-2 border-violet-100">
+          {/*Autres compétences*/}
+          <h2 className="p-4  bg-violet-100 text-violet-600 rounded-2xl text-center w-full ">
+            Autres compétences
           </h2>
-          <ImageGallery imagesSrc={imagesTechnicalSkills} />
+          <ImageGallery imagesSrc={imagesAutresCompetences} />
+        </div>
+      </section>
+    </div>
+  );
+}
+
+{
+  /*Mon parcours*/
+}
+export function SectionParcours() {
+  const [activeTab, setActiveTab] = useState<TabKey>("formations");
+  type TabKey = "experiences" | "formations" | "parcours";
+  //const current = experiences[activeTab];
+  return (
+    <div className="flex flex-col">
+      <Titresection titre="Mon parcours" />
+      <section className="flex flex-col gap-2 lg:gap-4 w-full">
+        <div className="flex flex-row gap-2 lg:gap-4 justify-center items-center w-full">
+          {tabs.map((tab) => (
+            <h2
+              key={tab.key}
+              className={` btn rounded-xl p-2 lg:p-8 transition ${
+                activeTab === tab.key
+                  ? "bg-violet-600 text-white"
+                  : "bg-violet-200 text-violet-600"
+              } `}
+              onClick={() => setActiveTab(tab.key)}
+            >
+              {tab.label}
+            </h2>
+          ))}
+        </div>
+
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 lg:gap-6 gap-3 w-full">
+          <AnimatePresence mode="wait">
+            {data[activeTab]?.map((item, index) => (
+              <SectionParcoursCard
+                index={index}
+                activeTab={activeTab}
+                titre={item.title}
+                description={item.description}
+              />
+            ))}
+          </AnimatePresence>
         </div>
       </section>
     </div>
