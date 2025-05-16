@@ -37,7 +37,7 @@ export function SectionPresentation() {
           <ImageMine
             src="/assets/PhotoMoi.png"
             alt="Lights"
-            className="rounded-lg w-80 h-80"
+            className="rounded-xl h-96"
           />
         </div>
 
@@ -54,13 +54,13 @@ export function SectionPresentation() {
           <div className="flex flex-row lg:flex-row lg:justify-start gap-2 lg:gap-4 justify-center items-center w-full">
             <a
               href=""
-              className=" w-fit bg-white hover:bg-violet-600 hover:text-white text-violet-600 text-sm lg:text-lg border-2 font-semibold py-2 px-4 rounded hover:rounded hover:border-2 hover:border-violet-600 transition duration-300 ease-in-out"
+              className=" w-fit bg-white hover:bg-violet-600 hover:text-white text-violet-600 text-sm lg:text-lg border-2 font-semibold py-2 px-4 rounded-2xl hover:rounded-2xl hover:border-2 hover:border-violet-600 transition duration-300 ease-in-out"
             >
               Télecharger mon CV
             </a>
             <a
               href=""
-              className=" w-fit   bg-violet-600 text-white font-semibold py-2 text-sm lg:text-lg px-4 rounded border-2 border-violet-600"
+              className=" w-fit   bg-violet-600 text-white font-semibold py-2 text-sm lg:text-lg px-4 rounded-2xl border-2 border-violet-600"
             >
               A Propos de moi
             </a>

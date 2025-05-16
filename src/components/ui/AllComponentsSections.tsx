@@ -1,5 +1,3 @@
-
-
 type TitresectionProps = {
   titre: string;
   className?: string;
@@ -49,21 +47,48 @@ export function Cardsimple({
 }: CardsimpleProps) {
   return (
     <>
-      <div className="card shadow-sm bg-violet-100 lg:card-side lg:card-md card-sm rounded-lg">
+      <div className="card shadow-sm bg-violet-100 lg:card-side lg:card-md card-sm rounded-3xl">
         <figure>
-          <img src={imgSrc} alt={titreCard} className="w-full h-40 lg:w-40 lg:h-full object-cover lg:rounded-none" />
+          <img
+            src={imgSrc}
+            alt={titreCard}
+            className="w-full h-40 lg:w-40 lg:h-full object-cover lg:rounded-none"
+          />
         </figure>
-
 
         <div className="card-body flex-1 p-4 flex flex-col justify-start">
           <h2 className="card-title">{titreCard}</h2>
           <p className="text-gray-600">{resume}</p>
           <p>{date}</p>
-          <a className="card-actions justify-end">
-            <button className="btn bg-violet-600 w-full text-white">{button}</button>
+          <a className="card-actions justify-start">
+            <ButtonLirePlus link="#" text="Voir plus" />
           </a>
         </div>
       </div>
     </>
   );
 }
+
+interface ButtonProps {
+  link : string;
+  text : string
+}
+
+export function ButtonLirePlus({link, text}: ButtonProps) {
+  return (
+    <a
+      className="card-actions justify-start w-fit hover:gap-4 transition-all transform duration-300"
+      href={link}
+    >
+      <p className="text-violet-800 text-sm">{text}</p>
+      <img
+        src="/assets/icon/arrow-right.svg"
+        alt="Arrow Right"
+        className="lg:h-5 lg:w-5 w-5"
+      />
+    </a>
+  );
+}
+
+
+

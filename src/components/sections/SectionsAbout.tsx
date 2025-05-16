@@ -16,7 +16,7 @@ import {
 import { Titresection } from "../ui/AllComponentsSections";
 
 import { useState } from "react";
-import { AnimatePresence, motion } from "framer-motion";
+import { AnimatePresence } from "framer-motion";
 //import { motion, AnimatePresence } from "framer-motion";
 
 {
@@ -32,7 +32,7 @@ export function SectionAbout() {
           <img
             src="/assets/profil.webp"
             alt="image"
-            className="lg:h-full lg:w-md h-80 rounded-2xl"
+            className="lg:h-full lg:w-md h-80 rounded-3xl"
           />
         </div>
 
@@ -145,7 +145,7 @@ export function SectionParcours() {
           {tabs.map((tab) => (
             <h2
               key={tab.key}
-              className={` btn rounded-xl p-2 lg:p-8 transition ${
+              className={` btn rounded-2xl p-2 lg:p-8 transition ${
                 activeTab === tab.key
                   ? "bg-violet-600 text-white"
                   : "bg-violet-200 text-violet-600"

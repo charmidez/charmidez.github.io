@@ -1,10 +1,5 @@
 import { SectionPresentation , SectionActualite } from "../sections/SectionsHome";
 
-
-
-
-
-
 function HomePage() {
   return (
     <div className="mt-16">

@@ -5,6 +5,8 @@ import AboutPage from "./pages/AboutPage";
 
 import BottomBar from "./ui/BottomBar";
 
+import Footer from "./ui/Footer";
+
 import HomePage from "./pages/HomePage";
 import ProjectsMine from "./pages/ProjectMine";
 import ContactPage from "./pages/ContactPage";
@@ -24,6 +26,7 @@ function BodyMine() {
             <Route path="/contact" element={<ContactPage />} />
           </Routes>
           <BottomBar />
+          <Footer />
         </BrowserRouter>
 
 

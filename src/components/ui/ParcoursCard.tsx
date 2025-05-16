@@ -19,7 +19,7 @@ export default function SectionParcoursCard({
   return (
     <motion.div
       key={`${activeTab}-${index}`}
-      className={`card card-body w-full bg-white ${className} `}
+      className={`card card-body w-full rounded-3xl bg-white ${className} `}
       initial={{ opacity: 0, y: 30 }}
       animate={{ opacity: 1, y: 0 }}
       exit={{ opacity: 0, y: -30 }}
