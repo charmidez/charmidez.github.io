@@ -1,4 +1,4 @@
-import { SectionPresentation , SectionActualite } from "../sections/SectionsHome";
+import { SectionPresentation , SectionActualite, SectionCodeVibe } from "../sections/home/SectionsHome";
 
 function HomePage() {
   return (
@@ -9,6 +9,7 @@ function HomePage() {
       {/* SectionActualiteHOME - actualité */}
       <SectionActualite />
 
+      <SectionCodeVibe />
 
     </div>
   );

@@ -20,7 +20,7 @@ export const homePageDataActualite = {
                 ` + Mise en cache automatique et responsive facile`
             ],
             date: "04 Avril 2025",
-            image: "/assets/n.png",
+            image: "/assets/featured/n.png",
             code : [``, ``],
             resume : `Un outil puissant en subtitut de <img>.`,
         },
@@ -33,19 +33,19 @@ export const homePageDataActualite = {
                 `Réutiliser le composant avec des props configurables`
             ],
             date: "Date de l'actualité 2",
-            image: "/assets/pattern.jpg",
+            image: "/assets/featured/n.png",
         },
         {
             titre: "Titre de l'actualité 3",
             description: ["Description de l'actualité 2"],
             date: "Date de l'actualité 3",
-            image: "/assets/setup2.jpg",
+            image: "/assets/featured/n.png",
         },
         {
             titre: "Titre de l'actualité 4",
             description: ["Description de l'actualité 4"],
             date: "Date de l'actualité 4",
-            image: "/assets/setup3.jpg",
+            image: "/assets/featured/n.png",
         },
                 {
             titre: "Pourquoi utiliser <Image> de Next.js ?",
@@ -57,7 +57,7 @@ export const homePageDataActualite = {
                 ` + Mise en cache automatique et responsive facile`
             ],
             date: "04 Avril 2025",
-            image: "/assets/n.png",
+            image: "/assets/featured/n.png",
             code : [``, ``],
             resume : `Un outil puissant en subtitut de <img>.`,
         },
@@ -70,19 +70,25 @@ export const homePageDataActualite = {
                 `Réutiliser le composant avec des props configurables`
             ],
             date: "Date de l'actualité 2",
-            image: "/assets/pattern.jpg",
+            image: "/assets/featured/n.png",
         },
         {
             titre: "Titre de l'actualité 3",
             description: ["Description de l'actualité 2"],
             date: "Date de l'actualité 3",
-            image: "/assets/setup2.jpg",
+            image: "/assets/featured/n.png",
         },
         {
             titre: "Titre de l'actualité 4",
             description: ["Description de l'actualité 4"],
             date: "Date de l'actualité 4",
-            image: "/assets/setup3.jpg",
+            image: "/assets/featured/n.png",
         },
     ],
 };
+
+
+export const homePageDataCodeVibe = {
+    title : "Vibe Coding",
+    texte : ""
+}

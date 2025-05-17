@@ -28,8 +28,6 @@ function BodyMine() {
           <BottomBar />
           <Footer />
         </BrowserRouter>
-
-
       </div>
     </>
   );

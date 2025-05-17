@@ -1,4 +1,4 @@
-import { SectionAbout, SectionCompetences, SectionParcours } from "../sections/SectionsAbout";
+import { SectionAbout, SectionCompetences, SectionParcours } from "../sections/about/SectionsAbout";
 
 function AboutPage() {
   return (

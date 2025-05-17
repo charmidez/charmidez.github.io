@@ -1,8 +1,8 @@
 import { Link } from "react-router-dom";
-import ImageGallery from "../ui/ImageGallerie";
-import ImageGallerySkills from "../ui/ImageGallerieskils";
+import ImageGallery from "../../ui/ImageGallerie";
+import ImageGallerySkills from "../../ui/ImageGallerieskils";
 
-import SectionParcoursCard from "../ui/ParcoursCard";
+import SectionParcoursCard from "../../ui/ParcoursCard";
 
 import {
   imagesAPI,
@@ -11,9 +11,9 @@ import {
   imagesUiUX,
   tabs,
   data,
-} from "../sections/dataContents/AboutPageData";
+} from "./AboutPageData";
 
-import { Titresection } from "../ui/AllComponentsSections";
+import { Titresection } from "../../ui/AllComponentsSections";
 
 import { useState } from "react";
 import { AnimatePresence } from "framer-motion";
@@ -30,7 +30,7 @@ export function SectionAbout() {
         {/* Colonne de gauche */}
         <div className="items-center justify-center flex">
           <img
-            src="/assets/profil.webp"
+            src="/assets/images/profil.webp"
             alt="image"
             className="lg:h-full lg:w-md h-80 rounded-3xl"
           />

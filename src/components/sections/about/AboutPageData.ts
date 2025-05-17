@@ -5,33 +5,33 @@ export const imagesSoftSkills = [
 ];
 
 export const imagesAPI = [
-  { name: "KTOR", path: "/assets/ktor.png", niveau: "Avancé" },
-  { name: "Python3", path: "/assets/python.png", niveau: "Intermédiaire" },
-  { name: "Django", path: "/assets/django.png", niveau: "Intermédiaire" },
+  { name: "KTOR", path: "/assets/icon/ktor.png", niveau: "Avancé" },
+  { name: "Python3", path: "/assets/icon/python.png", niveau: "Intermédiaire" },
+  { name: "Django", path: "/assets/icon/django.png", niveau: "Intermédiaire" },
   {
     name: "PostgreSQL",
-    path: "/assets/postgresql.png",
+    path: "/assets/icon/postgresql.png",
     niveau: "Intermédiaire",
   },
-  { name: "GCP", path: "/assets/g-cloud.png", niveau: "Intermédiaire" },
-  { name: "MongoDB", path: "/assets/no-sql.png", niveau: "Intermédiaire" },
-  { name: "NoSQL", path: "/assets/no-sql2.png", niveau: "Intermédiaire" },
+  { name: "GCP", path: "/assets/icon/g-cloud.png", niveau: "Intermédiaire" },
+  { name: "MongoDB", path: "/assets/icon/no-sql.png", niveau: "Intermédiaire" },
+  { name: "NoSQL", path: "/assets/icon/no-sql2.png", niveau: "Intermédiaire" },
   { name: "Github", path: "/assets/icon/github.svg", niveau: "Intermédiaire" },
 ];
 
 export const imagesUiUX = [
-  { name: "Kotlin", path: "/assets/kotlin.png", niveau: "Avancé" },
-  { name: "Compose", path: "/assets/jetpack.svg", niveau: "Avancé" },
-  { name: "Typescript", path: "/assets/typescript.png", niveau: "Avancé" },
-  { name: "ReactJS", path: "/assets/react.svg", niveau: "Avancé" },
-  { name: "NextJS", path: "/assets/next.png", niveau: "Avancé" },
+  { name: "Kotlin", path: "/assets/icon/kotlin.png", niveau: "Avancé" },
+  { name: "Compose", path: "/assets/icon/jetpack.svg", niveau: "Avancé" },
+  { name: "Typescript", path: "/assets/icon/typescript.png", niveau: "Avancé" },
+  { name: "ReactJS", path: "/assets/icon/react.svg", niveau: "Avancé" },
+  { name: "NextJS", path: "/assets/icon/next.png", niveau: "Avancé" },
   {
     name: "TailwindCSS",
-    path: "/assets/tailwind.png",
+    path: "/assets/icon/tailwind.png",
     niveau: "Intermédiaire",
   },
-  { name: "Gatsby", path: "/assets/gatsbyjs.png", niveau: "Intermédiaire" },
-  { name: "wordpress", path: "/assets/wordpress.png", niveau: "Intermédiaire" },
+  { name: "Gatsby", path: "/assets/icon/gatsbyjs.png", niveau: "Intermédiaire" },
+  { name: "wordpress", path: "/assets/icon/wordpress.png", niveau: "Intermédiaire" },
 
   //{ name: "HTML", path: "/assets/html.png" },
   //{ name: "CSS", path: "/assets/css.png" },
@@ -50,13 +50,14 @@ export const imagesUiUX = [
 ];
 
 export const imagesAutresCompetences = [
+  { name: "ChatGPT", path: "/assets/icon/gpt.svg", niveau: "Prompt" },
   {
     name: "Photoshop",
     path: "/assets/icon/photoshop.svg",
     niveau: "Intermédiaire",
   },
   { name: "Figma", path: "/assets/icon/figma.svg", niveau: "Bases" },
-  { name: "BitWig", path: "/assets/icon/bitwig.png", niveau: "Avancé" },
+  { name: "BitWig", path: "/assets/icon/bitwig.svg", niveau: "Avancé" },
 ];
 
 /*

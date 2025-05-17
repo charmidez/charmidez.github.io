@@ -1,15 +1,16 @@
-import ImageMine from "../ui/ImageMine";
-import { Cardsimple, SectionDivMine, Titresection } from "../ui/AllComponentsSections";
+import ImageMine from "../../ui/ImageMine";
+import { Cardsimple, SectionDivMine, Titresection } from "../../ui/AllComponentsSections";
 
 import {
   homePageDataActualite,
+  homePageDataCodeVibe,
   homePageDataPresentation,
-} from "./dataContents/HomePageData";
+} from "./HomePageData";
 
 export function SectionPresentation() {
   return (
     <>
-      <section className="py-8 px-4 md:px-6 lg:px-32 lg:py-16 flex flex-col lg:flex-row w-full justify-center gap-4 lg:gap-8 bg-[url('/assets/pattern.png')]">
+      <section className="py-8 px-4 md:px-6 lg:px-32 lg:py-16 flex flex-col lg:flex-row w-full justify-center gap-4 lg:gap-8 bg-[url('/assets/pattern/pattern.png')]">
         <div className="flex lg:flex-col flex-row gap-1 lg:gap-2 items-start">
           <a
             href="https://github.com/charmidez"
@@ -17,7 +18,7 @@ export function SectionPresentation() {
             rel="noopener noreferrer"
             className="text-blue-500"
           >
-            <img src="/assets/github.png" alt="github" className="h-10 w-10" />
+            <img src="/assets/icon/github.png" alt="github" className="h-10 w-10" />
           </a>
           <a
             href="https://www.linkedin.com/in/charmidez-k-h-assiobo-95677a1b2/"
@@ -26,7 +27,7 @@ export function SectionPresentation() {
             className="text-blue-500"
           >
             <img
-              src="/assets/linkedin.png"
+              src="/assets/icon/linkedin.png"
               alt="linkedIn"
               className="h-10 w-10"
             />
@@ -35,7 +36,7 @@ export function SectionPresentation() {
 
         <div className="flex items-center justify-center">
           <ImageMine
-            src="/assets/PhotoMoi.png"
+            src="/assets/images/PhotoMoi.png"
             alt="Lights"
             className="rounded-xl h-96"
           />
@@ -73,7 +74,7 @@ export function SectionPresentation() {
 
 export function SectionActualite() {
   return (
-    <SectionDivMine>
+    <SectionDivMine className="px-4 lg:px-32">
       <Titresection titre={homePageDataActualite.title} className="justify-center"/>
       <div className="">
         {homePageDataActualite.articles && (
@@ -88,6 +89,18 @@ export function SectionActualite() {
 
     </SectionDivMine>
   );
+}
+
+export function SectionCodeVibe(){
+  return(
+    <SectionDivMine className="bg-violet-50 px-4 lg:px-32">
+      <Titresection titre={homePageDataCodeVibe.title} className="justify-center"/>
+      <p className="text-2xl border-l-4 border-violet-600 p-4">
+        <span className="font-bold">Vibe codeur {" "}</span>c’est pas une méthode de travail.
+        C’est un état d’esprit, une esthétique, un moment où le code devient une danse entre logique et émotion.
+      </p>
+    </SectionDivMine>
+  )
 }
 
 

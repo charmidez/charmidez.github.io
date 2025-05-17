@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import { TabKey } from "../sections/dataContents/AboutPageData";
+import { TabKey } from "../sections/about/AboutPageData";
 
 interface parcoursProps {
   titre: string;
