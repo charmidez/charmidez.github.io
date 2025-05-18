@@ -23,7 +23,7 @@ type SectionDivProps = {
 export function SectionDivMine({ children, className }: SectionDivProps) {
   return (
     <div
-      className={`flex flex-col justify-center lg:px-16 py-8 px-4 lg:gap-4 gap-2 ${className}`}
+      className={`flex flex-col justify-center lg:px-16 py-8 lg:py-16 px-4 lg:gap-4 gap-2 ${className}`}
     >
       {children}
     </div>
@@ -43,7 +43,6 @@ export function Cardsimple({
   imgSrc,
   resume,
   date,
-  button,
 }: CardsimpleProps) {
   return (
     <>

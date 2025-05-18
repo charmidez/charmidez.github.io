@@ -1,5 +1,9 @@
 import ImageMine from "../../ui/ImageMine";
-import { Cardsimple, SectionDivMine, Titresection } from "../../ui/AllComponentsSections";
+import {
+  Cardsimple,
+  SectionDivMine,
+  Titresection,
+} from "../../ui/AllComponentsSections";
 
 import {
   homePageDataActualite,
@@ -18,7 +22,11 @@ export function SectionPresentation() {
             rel="noopener noreferrer"
             className="text-blue-500"
           >
-            <img src="/assets/icon/github.png" alt="github" className="h-10 w-10" />
+            <img
+              src="/assets/icon/github.png"
+              alt="github"
+              className="h-10 w-10"
+            />
           </a>
           <a
             href="https://www.linkedin.com/in/charmidez-k-h-assiobo-95677a1b2/"
@@ -75,32 +83,69 @@ export function SectionPresentation() {
 export function SectionActualite() {
   return (
     <SectionDivMine className="px-4 lg:px-32">
-      <Titresection titre={homePageDataActualite.title} className="justify-center"/>
+      <Titresection
+        titre={homePageDataActualite.title}
+        className="justify-center"
+      />
       <div className="">
         {homePageDataActualite.articles && (
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 lg:gap-8 gap-4">
             {homePageDataActualite.articles.map((article, index) => (
-              <Cardsimple key={index} titreCard={article.titre} resume={article.resume} imgSrc={article.image} button="Lire plus" />
+              <Cardsimple
+                key={index}
+                titreCard={article.titre}
+                resume={article.resume}
+                imgSrc={article.image}
+                button="Lire plus"
+              />
             ))}
           </div>
         )}
       </div>
-
-
     </SectionDivMine>
   );
 }
 
-export function SectionCodeVibe(){
-  return(
+export function SectionCodeVibe() {
+  return (
     <SectionDivMine className="bg-violet-50 px-4 lg:px-32">
-      <Titresection titre={homePageDataCodeVibe.title} className="justify-center"/>
-      <p className="text-2xl border-l-4 border-violet-600 p-4">
-        <span className="font-bold">Vibe codeur {" "}</span>c’est pas une méthode de travail.
-        C’est un état d’esprit, une esthétique, un moment où le code devient une danse entre logique et émotion.
-      </p>
+      <Titresection
+        titre={homePageDataCodeVibe.title}
+        className="justify-center"
+      />
+      <div className="flex flex-col lg:flex-row lg:gap-8 gap-4">
+        <img
+          src="/assets/images/vibecoding.webp"
+          className="rounded-3xl w-40 h-fit lg:w-80 lg:h-fit"
+        />
+        <div className="flex flex-col gap-2 lg:gap-4">
+          <p className="text-xl rounded-3xl lg:p-8 p-4 shadow-xl bg-white">
+            <span className="font-bold">Vibe codeur </span>c’est pas une méthode
+            de travail. C’est un état d’esprit, une esthétique, un moment où le
+            code devient une danse entre logique et émotion <span className="text-violet-600 font-bold">- Je ne suis pas un vibe codeur pourtant !</span>
+          </p>
+          <p>
+            Le vibecoding, c’est plus qu’une session de code. C’est un état
+            d’alignement parfait entre le cerveau, les doigts et l’âme du dev.
+            Tu n’écris pas du code, tu ressens ton code. Tu ne règles pas des
+            bugs, tu explores un univers logique comme un architecte spatial.
+            C’est le moment où le temps s'efface, où chaque git commit est une
+            victoire silencieuse, où le terminal devient ton compagnon, la
+            musique ta muse, et le clavier ton instrument.
+          </p>
+          <p>
+            Imagine une pièce tamisée. Un écran ultra-wide baigne la pièce d’une
+            lumière douce en mode dark theme. Le casque est sur les oreilles —
+            playlist chill synth, lo-fi ou ambient techno. Il ou elle est en
+            hoodie, posture concentrée, parfois penché en avant, yeux plissés.
+            Sur l’écran, un split : d’un côté le code, de l’autre un navigateur
+            avec la doc ou une prévisualisation en live. Chaque Ctrl + S est une
+            pulsation. Chaque fonction est pensée comme une strophe de poésie.
+            Le monde extérieur n’existe plus. Le vibecodeur est dans sa bulle,
+            dans son flow. Il ne parle pas. Il clique peu. Il glisse. Il code.
+          </p>
+        </div>
+      </div>
     </SectionDivMine>
-  )
+  );
 }
-
-

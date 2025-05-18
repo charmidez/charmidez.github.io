@@ -4,7 +4,7 @@ import AboutPage from "./pages/AboutPage";
 import BottomBar from "./ui/BottomBar";
 import Footer from "./ui/Footer";
 import HomePage from "./pages/HomePage";
-import ProjectsMine from "./pages/ProjectMine";
+import ProjectsMine from "./pages/ProjectPage";
 import ContactPage from "./pages/ContactPage";
 import NavBarMine from "./ui/NavBarMine";
 
@@ -31,7 +31,7 @@ function BodyMine() {
 function App() {
   return (
     <>
-      <body>
+      <body className="lg:text-lg md:text-md text-sm">
         <BodyMine />
       </body>
     </>
