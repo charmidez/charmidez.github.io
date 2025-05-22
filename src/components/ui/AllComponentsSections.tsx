@@ -71,13 +71,15 @@ export function Cardsimple({
 interface ButtonProps {
   link : string;
   text : string
+  onClick? : MouseEventHandler<HTMLAnchorElement>
 }
 
-export function ButtonLirePlus({link, text}: ButtonProps) {
+export function ButtonLirePlus({link, text, onClick}: ButtonProps) {
   return (
     <a
       className="card-actions justify-start w-fit hover:gap-4 transition-all transform duration-300"
       href={link}
+      onClick={onClick}
     >
       <p className="text-violet-800 text-sm">{text}</p>
       <img

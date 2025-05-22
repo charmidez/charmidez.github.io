@@ -1,4 +1,5 @@
 import React from "react";
+import { useState } from "react";
 import { ButtonLirePlus } from "./AllComponentsSections";
 
 interface CardProjectProps {
@@ -8,7 +9,7 @@ interface CardProjectProps {
   logo: string;
 }
 
-const CardProject: React.FC<CardProjectProps> = ({
+export const CardProject: React.FC<CardProjectProps> = ({
   imageSrc,
   title,
   link,
@@ -16,26 +17,25 @@ const CardProject: React.FC<CardProjectProps> = ({
 }) => {
   return (
     <div className="card rounded-3xl shadow-xl bg-white">
-
-      {/* Left side: Image */}
       <figure className="p-4 rounded-2xl">
         <img
           src={imageSrc}
           alt={title}
-          className="object-contain rounded-2xl"
+          className="object-contain rounded-2xl border-2 border-violet-100"
         />
       </figure>
 
-      {/* Right side: Title and Description */}
-      <div className="card-body flex-1 p-4 flex flex-col justify-between">
-        <div className="flex items-center mb-2">
-          <img src={logo} alt={title} className="w-10 h-10 border-0 rounded-xl" />
+      <div className="card-body pt-0 justify-between">
+        <div className="flex flex-row items-center">
+          <img
+            src={logo}
+            alt={title}
+            className="w-10 h-10 border-0 rounded-xl"
+          />
           <h3 className="card-title text-xl font-semibold ml-2">{title}</h3>
         </div>
 
-        <a
-          className="card-actions justify-start"
-        >
+        <a className="card-actions justify-start">
           <ButtonLirePlus link={link} text="Jeter un coup d'oeil" />
         </a>
       </div>
@@ -43,32 +43,51 @@ const CardProject: React.FC<CardProjectProps> = ({
   );
 };
 
-export default CardProject;
+export const CardProjectMobile: React.FC<CardProjectProps> = ({
+  imageSrc,
+  title,
+  link,
+  logo,
+}) => {
+  const [isOpen, setIsOpen] = useState(false);
 
+  const openCarte = () => setIsOpen(true);
+  const closeCarte = () => setIsOpen(false);
 
-
-/*
-
-<>
-      <div className="card shadow-sm bg-violet-100 lg:card-side lg:card-md card-sm rounded-3xl">
-        <figure>
+  return (
+    <section>
+      <div className="card lg:card-side rounded-3xl shadow-xl bg-white">
+        <figure className="p-4 rounded-2xl">
           <img
-            src={imgSrc}
-            alt={titreCard}
-            className="w-full h-40 lg:w-40 lg:h-full object-cover lg:rounded-none"
+            src={imageSrc}
+            alt={title}
+            className="object-contain rounded-2xl border-2 border-violet-100"
           />
         </figure>
 
-        <div className="card-body flex-1 p-4 flex flex-col justify-start">
-          <h2 className="card-title">{titreCard}</h2>
-          <p className="text-gray-600">{resume}</p>
-          <p>{date}</p>
+        <div className="card-body lg:pl-0 justify-between">
+          <div className="flex flex-row items-center">
+            <img
+              src={logo}
+              alt={title}
+              className="w-10 h-10 border-0 rounded-xl"
+            />
+            <h3 className="card-title lg:text-xl text-sm  font-semibold ml-2">
+              {title}
+            </h3>
+          </div>
+
           <a className="card-actions justify-start">
-            <ButtonLirePlus link="#" text="Voir plus" />
+            <ButtonLirePlus
+              link={link}
+              text="Jeter un coup d'oeil"
+              onClick={openCarte}
+            />
           </a>
         </div>
       </div>
-    </>
+    </section>
+  );
+};
 
-
-*/
+//export default CardProject;
