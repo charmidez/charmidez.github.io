@@ -1,3 +1,5 @@
+import { MouseEventHandler } from "react";
+
 type TitresectionProps = {
   titre: string;
   className?: string;

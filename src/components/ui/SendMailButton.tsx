@@ -11,7 +11,6 @@ const SendMailButton: React.FC<SendMailButtonProps> = ({
   to,
   subject = '',
   body = '',
-  children = 'Send Email',
 }) => {
   const handleClick = () => {
     const mailtoLink = `mailto:${encodeURIComponent(to)}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
@@ -19,12 +18,7 @@ const SendMailButton: React.FC<SendMailButtonProps> = ({
   };
 
   return (
-    <button
-      onClick={handleClick}
-      className="px-4 py-2 bg-violet-500 text-white rounded-xl hover:bg-violet-900 transition"
-    >
-      {children}
-    </button>
+     <img onClick={handleClick} src='/assets/icon/mail.svg' className='h-10 hover:bg-violet-800 p-0.5 rounded-lg' />
   );
 };
 

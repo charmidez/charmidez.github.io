@@ -1,4 +1,7 @@
-import ContactForm from "../ui/ContactForm";
+//import ContactForm from "../ui/ContactForm";
+
+import ImageMine from "../ui/ImageMine";
+import { StatCard } from "../ui/Others";
 
 function ContactPage() {
   return (
@@ -7,7 +10,14 @@ function ContactPage() {
         <h2 className="text-4xl font-extrabold text-violet-800 dark:text-white text-center mb-8">
           Don't hesitate to contact me!
         </h2>
-        <ContactForm />
+        <StatCard 
+          icon={<ImageMine src="/assets/logo/carre.png" />}
+          label="Test"
+          value="100"
+          changePercentage={23}
+          changeText="You"
+
+        />
       </section>
     </>
   );
