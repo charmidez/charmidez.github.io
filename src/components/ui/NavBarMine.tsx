@@ -70,9 +70,7 @@ function NavBarMine() {
             to="charmidez.assiobo@gmail.com"
             subject="Contact via Portfolio"
             body="Bonjour Charmidez, je vous contacte depuis votre portfolio."
-          >
-            e-Mail me
-          </SendMailButton>
+          />
         </div>
       </div>
     </>

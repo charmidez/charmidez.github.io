@@ -44,7 +44,7 @@ export function SectionPresentation() {
 
         <div className="flex items-center justify-center">
           <ImageMine
-            src="/assets/images/PhotoMoi.png"
+            src="/assets/images/PhotoMoi.webp"
             alt="Lights"
             className="rounded-xl h-96"
           />

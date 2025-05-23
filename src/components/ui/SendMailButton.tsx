@@ -18,7 +18,7 @@ const SendMailButton: React.FC<SendMailButtonProps> = ({
   };
 
   return (
-     <img onClick={handleClick} src='/assets/icon/mail.svg' className='h-10 hover:bg-violet-800 p-0.5 rounded-lg' />
+     <img onClick={handleClick} src='/assets/icon/mail.svg' className='h-10 hover:mb-2 transition-all transform duration-500 rounded-lg' />
   );
 };
 
