@@ -1,5 +1,5 @@
 //import { Link } from "react-router-dom";
-import { useLocation } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 import MenuItemMine from "./MenuItemMine";
 import SendMailButton from "./SendMailButton";
 
@@ -14,7 +14,6 @@ const menuItem: { key: MenuKey; label: string; href: string }[] = [
 ];
 
 function NavBarMine() {
-  
   const location = useLocation();
 
   const getMenuFromPath = (path: string): MenuKey => {
@@ -29,7 +28,6 @@ function NavBarMine() {
         return "home";
     }
   };
-  
 
   //const [activeMenu, setActiveMenu] = useState<MenuKey>("home");
   const [activeMenu, setActiveMenu] = useState<MenuKey>(() =>
@@ -39,14 +37,14 @@ function NavBarMine() {
   return (
     <>
       <div className="navbar bg-violet-700 flex justify-center items-center mx-auto px-4 lg:px-32 mb-2 fixed top-0 z-50">
-        <div className="navbar-start">
+        <Link to={"/"} className="navbar-start">
           <img
             src="/assets/logo/logowhite.png"
             alt="Logo"
             className="h-8 w-8 object-contain mr-2"
           />
           <a className="font-bold lg:text-2xl text-white">CHARMIDEZ</a>
-        </div>
+        </Link>
 
         <div className="navbar-center hidden lg:flex">
           <ul className="menu menu-horizontal rounded-box">
