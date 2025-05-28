@@ -51,7 +51,6 @@ export const CardProjectMobile: React.FC<CardProjectProps> = ({
   imageSrc,
   title,
   descText,
-  link,
   logo,
 }) => {
   //const [isOpen, setIsOpen] = useState(false);

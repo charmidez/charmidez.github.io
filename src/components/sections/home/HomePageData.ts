@@ -72,18 +72,6 @@ export const homePageDataActualite = {
             date: "Date de l'actualité 2",
             image: "/assets/featured/n.png",
         },
-        {
-            titre: "Titre de l'actualité 3",
-            description: ["Description de l'actualité 2"],
-            date: "Date de l'actualité 3",
-            image: "/assets/featured/n.png",
-        },
-        {
-            titre: "Titre de l'actualité 4",
-            description: ["Description de l'actualité 4"],
-            date: "Date de l'actualité 4",
-            image: "/assets/featured/n.png",
-        },
     ],
 };
 

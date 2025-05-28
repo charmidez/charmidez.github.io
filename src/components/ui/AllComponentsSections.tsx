@@ -1,4 +1,5 @@
-import { MouseEventHandler } from "react";
+import { MouseEventHandler, useState } from "react";
+import { OpencarteActualite } from "./OpenCard";
 
 type TitresectionProps = {
   titre: string;
@@ -38,14 +39,23 @@ type CardsimpleProps = {
   resume?: string;
   date?: string;
   button?: string;
+  desc?: string;
+  component?: React.ReactNode;
 };
 
+//Card simple composant pour les cartes d'actualités
 export function Cardsimple({
   titreCard,
   imgSrc,
   resume,
   date,
+  button,
+  desc, 
+
 }: CardsimpleProps) {
+  const [show, setShow] = useState(false);
+    const openCarte = () => setShow(true);
+
   return (
     <>
       <div className="card shadow-sm bg-violet-100 lg:card-side lg:card-md card-sm rounded-3xl">
@@ -62,9 +72,13 @@ export function Cardsimple({
           <p className="text-gray-600">{resume}</p>
           <p>{date}</p>
           <a className="card-actions justify-start">
-            <ButtonLirePlus link="#" text="Voir plus" />
+            <ButtonLirePlusCompose text={button} onClick={openCarte}/>
           </a>
         </div>
+
+        {
+          setShow && (<OpencarteActualite isVisible={show} onClick={() => setShow(false)} titre={titreCard} resume={resume} imgSrc={imgSrc} date={date} />)
+        }
       </div>
     </>
   );
@@ -83,6 +97,24 @@ export function ButtonLirePlus({link, text, onClick}: ButtonProps) {
       href={link}
       target="_blank" 
       rel="noopener noreferrer"
+      onClick={onClick}
+    >
+      <p className="text-violet-800 text-sm">{text}</p>
+      <img
+        src="/assets/icon/arrow-right.svg"
+        alt="Arrow Right"
+        className="lg:h-5 lg:w-5 w-5"
+      />
+    </a>
+  );
+}
+
+
+export function ButtonLirePlusCompose({text, onClick}: ButtonProps) {
+
+  return (
+    <a
+      className="card-actions justify-start w-fit hover:gap-4 transition-all transform duration-300"
       onClick={onClick}
     >
       <p className="text-violet-800 text-sm">{text}</p>

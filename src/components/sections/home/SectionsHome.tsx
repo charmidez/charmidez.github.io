@@ -10,6 +10,7 @@ import {
   homePageDataCodeVibe,
   homePageDataPresentation,
 } from "./HomePageData";
+import { Link } from "react-router-dom";
 
 export function SectionPresentation() {
   return (
@@ -42,17 +43,17 @@ export function SectionPresentation() {
           </a>
         </div>
 
-        <div className="flex items-center justify-center">
+        <div className="flex items-center justify-center flex-1">
           <ImageMine
             src="/assets/images/PhotoMoi.webp"
             alt="Lights"
-            className="rounded-xl h-96"
+            className="rounded-xl"
           />
         </div>
 
-        <div className="flex flex-col mt-2 md:ml-4 lg:ml-8 gap-2 lg:gap-4 justify-center content-center items-center">
+        <div className="flex flex-col mt-2 md:ml-4 lg:ml-8 gap-2 lg:gap-4 justify-center content-center items-center lg:items-start flex-1">
           <div className="text-center lg:text-left flex flex-col gap-2">
-            <p>{homePageDataPresentation.salutation}</p>
+            <p className="font-semibold lg:text-2xl text-violet-500">{homePageDataPresentation.salutation}</p>
             <h1 className="lg:text-6xl text-4xl font-black text-violet-950">
               {homePageDataPresentation.title}
             </h1>
@@ -62,17 +63,20 @@ export function SectionPresentation() {
           </div>
           <div className="flex flex-row lg:flex-row lg:justify-start gap-2 lg:gap-4 justify-center items-center w-full">
             <a
-              href=""
+              href="/assets/documents/cv_charmidez.pdf"
+              download="cv_charmidez.pdf"
+              target="_blank"
+              rel="noopener noreferrer"
               className=" w-fit bg-white hover:bg-violet-600 hover:text-white text-violet-600 text-sm lg:text-lg border-2 font-semibold py-2 px-4 rounded-2xl hover:rounded-2xl hover:border-2 hover:border-violet-600 transition duration-300 ease-in-out"
             >
               Télecharger mon CV
             </a>
-            <a
-              href=""
+            <Link
+              to="/about"
               className=" w-fit   bg-violet-600 text-white font-semibold py-2 text-sm lg:text-lg px-4 rounded-2xl border-2 border-violet-600"
             >
               A Propos de moi
-            </a>
+            </Link>
           </div>
         </div>
       </section>
@@ -102,6 +106,7 @@ export function SectionActualite() {
           </div>
         )}
       </div>
+
     </SectionDivMine>
   );
 }

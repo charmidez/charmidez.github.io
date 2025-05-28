@@ -3,7 +3,7 @@ import { Link, useLocation } from "react-router-dom";
 import MenuItemMine from "./MenuItemMine";
 import SendMailButton from "./SendMailButton";
 
-import { useState } from "react";
+import { useState, useEffect } from "react";
 type MenuKey = "home" | "about" | "projectmine" | "contact";
 
 const menuItem: { key: MenuKey; label: string; href: string }[] = [
@@ -34,6 +34,10 @@ function NavBarMine() {
     getMenuFromPath(location.pathname)
   );
 
+  useEffect(() => {
+    setActiveMenu(getMenuFromPath(location.pathname));
+  }, [location.pathname]);
+
   return (
     <>
       <div className="navbar bg-violet-700 flex justify-center items-center mx-auto px-4 lg:px-32 mb-2 fixed top-0 z-50">
@@ -57,7 +61,7 @@ function NavBarMine() {
                 className={` ${
                   activeMenu === menu.key
                     ? "bg-violet-800 text-white"
-                    : "bg-violet-700 text-violet-600"
+                    : "bg-violet-700 text-white"
                 } `}
               />
             ))}

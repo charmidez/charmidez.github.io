@@ -1,5 +1,6 @@
 import { ButtonLirePlus, Titresection } from "../../ui/AllComponentsSections";
 import { useState, FormEvent } from "react";
+import emailjs from "@emailjs/browser";
 
 interface ContactcardProps {
     imgSrc : string
@@ -56,7 +57,28 @@ function Form(){
 
   const handleSubmit = (e: FormEvent) => {
     e.preventDefault();
+
     // Ici tu peux ajouter une logique d'envoi avec emailjs, formspree, API, etc.
+    const serviceID = 'service_zexn64l';
+    const templateID = 'template_bwf0mrd';
+    const publicKey = 'ypCpLXQ3-MBB3UpET';
+
+    const templateParams = {
+    from_name: form.name,
+    from_email: form.email,
+    message: form.message,
+  };
+
+  emailjs.send(serviceID, templateID, templateParams, publicKey)
+    .then((response) => {
+      console.log('Email envoyé !', response.status, response.text);
+      setSubmitted(true);
+      setForm({ name: "", email: "", message: "" });
+    })
+    .catch((error) => {
+      console.error('Erreur lors de l’envoi du mail:', error);
+    });
+
     console.log("Formulaire soumis:", form);
     setSubmitted(true);
     setForm({ name: "", email: "", message: "" });
@@ -147,7 +169,7 @@ export function Contactform(){
   return(
     <div>
       <Titresection titre="M'écrire directement" />
-      <div className="px-96">
+      <div className="lg:px-96">
         <Form />
       </div>
     </div>
