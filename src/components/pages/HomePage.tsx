@@ -9,6 +9,7 @@ function HomePage() {
       {/* SectionActualiteHOME - actualité */}
       <SectionActualite />
 
+      {/* SectionCodeVibeHOME - code vibe */}
       <SectionCodeVibe />
 
     </div>

@@ -48,13 +48,12 @@ export function Cardsimple({
   titreCard,
   imgSrc,
   resume,
+  component,
   date,
   button,
-  desc, 
-
 }: CardsimpleProps) {
   const [show, setShow] = useState(false);
-    const openCarte = () => setShow(true);
+  const openCarte = () => setShow(true);
 
   return (
     <>
@@ -70,32 +69,38 @@ export function Cardsimple({
         <div className="card-body flex-1 p-4 flex flex-col justify-start">
           <h2 className="card-title">{titreCard}</h2>
           <p className="text-gray-600">{resume}</p>
-          <p>{date}</p>
           <a className="card-actions justify-start">
-            <ButtonLirePlusCompose text={button} onClick={openCarte}/>
+            <ButtonLirePlusCompose text={button ?? 'Lire la suite'} onClick={openCarte} />
           </a>
         </div>
 
-        {
-          setShow && (<OpencarteActualite isVisible={show} onClick={() => setShow(false)} titre={titreCard} resume={resume} imgSrc={imgSrc} date={date} />)
-        }
+        {setShow && (
+          <OpencarteActualite
+            isVisible={show}
+            onClick={() => setShow(false)}
+            titre={titreCard}
+            imgSrc={imgSrc}
+            date={date}
+            component={component}
+          />
+        )}
       </div>
     </>
   );
 }
 
 interface ButtonProps {
-  link? : string;
-  text : string
-  onClick? : MouseEventHandler<HTMLAnchorElement>
+  link?: string;
+  text: string;
+  onClick?: MouseEventHandler<HTMLAnchorElement>;
 }
 
-export function ButtonLirePlus({link, text, onClick}: ButtonProps) {
+export function ButtonLirePlus({ link, text, onClick }: ButtonProps) {
   return (
     <a
       className="card-actions justify-start w-fit hover:gap-4 transition-all transform duration-300"
       href={link}
-      target="_blank" 
+      target="_blank"
       rel="noopener noreferrer"
       onClick={onClick}
     >
@@ -109,9 +114,7 @@ export function ButtonLirePlus({link, text, onClick}: ButtonProps) {
   );
 }
 
-
-export function ButtonLirePlusCompose({text, onClick}: ButtonProps) {
-
+export function ButtonLirePlusCompose({ text, onClick }: ButtonProps) {
   return (
     <a
       className="card-actions justify-start w-fit hover:gap-4 transition-all transform duration-300"
@@ -126,6 +129,3 @@ export function ButtonLirePlusCompose({text, onClick}: ButtonProps) {
     </a>
   );
 }
-
-
-

@@ -100,6 +100,8 @@ export function SectionActualite() {
                 titreCard={article.titre}
                 resume={article.resume}
                 imgSrc={article.image}
+                date={article.date}
+                component={article.component}
                 button="Lire plus"
               />
             ))}

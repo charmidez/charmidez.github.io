@@ -43,7 +43,7 @@ export function SectionAbout() {
               <ImageGallerySkills imagesSrc={imagesSoftSkills} />
             </div>
 
-            <div className="flex flex-col gap-4 text-sm lg:text-lg text-gray-700 dark:text-gray-300 leading-relaxed">
+            <div className="flex flex-col gap-4 text-sm lg:text-lg text-gray-700 leading-relaxed">
               <p className="">
                 <span className="text-violet-700">
                   Développeur Web & Mobile full-stack basé à Lomé, Togo,
@@ -82,7 +82,7 @@ export function SectionAbout() {
 
           <Link
             to="/contact"
-            className="btn w-fit p-8 bg-violet-600 text-white lg:text-lg text-sm font-light rounded-xl shadow-xl"
+            className="btn w-fit p-8 bg-violet-600 text-white lg:text-lg text-sm font-normal rounded-xl shadow-xl"
           >
             Contactez moi
           </Link>

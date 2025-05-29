@@ -1,3 +1,7 @@
+//import { Component } from "react";
+
+import { UtiliserNextJS } from "./ActualiteComponent";
+
 export const homePageDataPresentation = {
     salutation: `Bonjour, Je suis `,
     title: "Charmidez ASSIOBO",
@@ -11,18 +15,11 @@ export const homePageDataActualite = {
     title: "Actualité",
     articles: [
         {
-            titre: "Pourquoi utiliser <Image> de Next.js ?",
-            description: ["Next.js propose un composant natif appelé <Image /> qui permet d’optimiser les performances de chargement des images.", `Voici ses principaux avantages :`,
-                ` + Chargement paresseux (lazy loading) automatique`,
-                ` + Redimensionnement d’image côté serveur`,
-                ` + Support de formats modernes comme WebP ou AVIF`,
-                ` + Optimisation SEO et accessibilité`,
-                ` + Mise en cache automatique et responsive facile`
-            ],
+            titre: "Pourquoi utiliser <Image/> de Next.js ?",
             date: "04 Avril 2025",
             image: "/assets/featured/n.png",
-            code : [``, ``],
             resume : `Un outil puissant en subtitut de <img>.`,
+            component : <UtiliserNextJS/>
         },
         {
             titre: "Pourquoi créer son propre module <Image /> en React pur ?",
@@ -80,3 +77,6 @@ export const homePageDataCodeVibe = {
     title : "Vibe Coding",
     texte : ""
 }
+
+
+
