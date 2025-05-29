@@ -9,6 +9,8 @@ import ContactPage from "./pages/ContactPage";
 import NavBarMine from "./ui/NavBarMine";
 import { AnimatePresence } from "framer-motion";
 import PageWrapper from "./ui/PageWrapper";
+import ActualiteSousPage from "./sections/home/ActualiteSousPage";
+import { ScrollToTop } from "./ui/ScrollTop";
 //import PageWrapper from "./components/PageWrapper";
 
 function BodyMine() {
@@ -22,6 +24,7 @@ function BodyMine() {
         <AnimatePresence mode="wait">
           <Routes key={location.pathname} location={location}>
             <Route path="/" element={<PageWrapper><HomePage /></PageWrapper>} />
+            <Route path="/actualite/:slug" element={<PageWrapper><ActualiteSousPage /></PageWrapper>} />
             <Route path="/about" element={<PageWrapper><AboutPage /></PageWrapper>} />
             <Route path="/projectmine" element={<PageWrapper><ProjectsMine /></PageWrapper>} />
             <Route path="/contact" element={<PageWrapper><ContactPage /></PageWrapper>} />
@@ -39,6 +42,7 @@ function App() {
   return (
     <BrowserRouter>
       <div className="lg:text-lg md:text-md text-sm">
+        <ScrollToTop />
         <BodyMine />
       </div>
     </BrowserRouter>

@@ -85,6 +85,7 @@ export function SectionPresentation() {
 }
 
 export function SectionActualite() {
+
   return (
     <SectionDivMine className="px-4 lg:px-32">
       <Titresection
@@ -93,8 +94,9 @@ export function SectionActualite() {
       />
       <div className="">
         {homePageDataActualite.articles && (
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 lg:gap-8 gap-4">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 lg:gap-8 gap-4">
             {homePageDataActualite.articles.map((article, index) => (
+              
               <Cardsimple
                 key={index}
                 titreCard={article.titre}
@@ -103,6 +105,7 @@ export function SectionActualite() {
                 date={article.date}
                 component={article.component}
                 button="Lire plus"
+                link={`/actualite/${article.slug}`}
               />
             ))}
           </div>

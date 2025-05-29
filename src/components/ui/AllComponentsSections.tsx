@@ -1,5 +1,6 @@
 import { MouseEventHandler, useState } from "react";
 import { OpencarteActualite } from "./OpenCard";
+import { Link } from "react-router-dom";
 
 type TitresectionProps = {
   titre: string;
@@ -40,6 +41,7 @@ type CardsimpleProps = {
   date?: string;
   button?: string;
   desc?: string;
+  link?: string;
   component?: React.ReactNode;
 };
 
@@ -48,13 +50,11 @@ export function Cardsimple({
   titreCard,
   imgSrc,
   resume,
-  component,
-  date,
+  link,
+
   button,
 }: CardsimpleProps) {
-  const [show, setShow] = useState(false);
-  const openCarte = () => setShow(true);
-
+{/*
   return (
     <>
       <div className="card shadow-sm bg-violet-100 lg:card-side lg:card-md card-sm rounded-3xl">
@@ -70,23 +70,33 @@ export function Cardsimple({
           <h2 className="card-title">{titreCard}</h2>
           <p className="text-gray-600">{resume}</p>
           <a className="card-actions justify-start">
-            <ButtonLirePlusCompose text={button ?? 'Lire la suite'} onClick={openCarte} />
+            <ButtonLirePlusCompose text={button ?? 'Lire la suite'} link={link}/>
           </a>
         </div>
-
-        {setShow && (
-          <OpencarteActualite
-            isVisible={show}
-            onClick={() => setShow(false)}
-            titre={titreCard}
-            imgSrc={imgSrc}
-            date={date}
-            component={component}
-          />
-        )}
       </div>
     </>
   );
+  */}
+
+  return(
+        <div className="card shadow-sm bg-violet-100 lg:card-side rounded-3xl overflow-hidden">
+      <figure className="lg:w-[40%] w-full max-h-64">
+        <img
+          src={imgSrc}
+          alt={titreCard}
+          className="w-full h-full object-cover lg:rounded-none"
+        />
+      </figure>
+
+      <div className="card-body flex-1 p-4 flex flex-col justify-start lg:w-[60%]">
+        <h2 className="card-title text-xl font-semibold">{titreCard}</h2>
+        <p className="text-gray-600">{resume}</p>
+        <div className="card-actions mt-4">
+          <ButtonLirePlusCompose text={button ?? 'Lire la suite'} link={link} />
+        </div>
+      </div>
+    </div>
+  )
 }
 
 interface ButtonProps {
@@ -114,11 +124,12 @@ export function ButtonLirePlus({ link, text, onClick }: ButtonProps) {
   );
 }
 
-export function ButtonLirePlusCompose({ text, onClick }: ButtonProps) {
+export function ButtonLirePlusCompose({link,  text }: ButtonProps) {
   return (
-    <a
+    <Link
       className="card-actions justify-start w-fit hover:gap-4 transition-all transform duration-300"
-      onClick={onClick}
+      //onClick={onClick}
+      to={link || "#"}
     >
       <p className="text-violet-800 text-sm">{text}</p>
       <img
@@ -126,6 +137,6 @@ export function ButtonLirePlusCompose({ text, onClick }: ButtonProps) {
         alt="Arrow Right"
         className="lg:h-5 lg:w-5 w-5"
       />
-    </a>
+    </Link>
   );
 }
