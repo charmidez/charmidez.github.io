@@ -137,7 +137,7 @@ export const data = {
   },
   ],
   formations: [
-    { title: "Android (Kotlin)", description: "Apps natives avec Jetpack Compose." },
+    { title: "Licence professionnelle", institut :"ESIG GLOBAL SUCCES", description: "Systèmes Informatiques & Logiciels / Génie Logiciel." },
     { title: "Flutter", description: "Développement multiplateforme rapide." }
   ],
   parcours: [

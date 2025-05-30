@@ -164,6 +164,7 @@ export function SectionParcours() {
                 index={index}
                 activeTab={activeTab}
                 titre={item.title}
+                institut={item.institut}
                 description={item.description}
               />
             ))}

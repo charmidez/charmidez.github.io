@@ -22,7 +22,7 @@ export const homePageDataActualite = {
       titre: "Pourquoi utiliser <Image/> de Next.js ?",
       date: "04 Avril 2025",
       image: "/assets/featured/n.png",
-      resume: `Un outil puissant en subtitut de <img>.`,
+      resume: `Le composant <Image /> de Next.js optimise automatiquement vos images pour de meilleures performances, accessibilité et SEO.`,
       component: <UtiliserNextJS />,
       auteur: "Charmidez ASSIOBO",
     },
@@ -37,15 +37,15 @@ export const homePageDataActualite = {
       auteur: "Charmidez ASSIOBO",
     },
     {
-  slug: "kotlin-vs-spring",
-  titre: "Kotlin vs Spring Boot : comprendre leurs rôles et bien choisir sa stack backend",
-  date: "29 Mai 2025",
-  image: "/assets/featured/kotlin-spring.webp",
-  resume: `Kotlin et Spring Boot sont souvent associés, mais leurs rôles sont bien différents. L'un est un langage moderne, l'autre un framework robuste. Lequel utiliser et quand ?`,
-  component: <KtorVsSpringArticle />,
-  auteur: "Charmidez ASSIOBO"
-}
-
+      slug: "kotlin-vs-spring",
+      titre:
+        "Kotlin vs Spring Boot : comprendre leurs rôles et bien choisir sa stack backend",
+      date: "29 Mai 2025",
+      image: "/assets/featured/kotlin-spring.webp",
+      resume: `Kotlin et Spring Boot sont souvent associés, mais leurs rôles sont bien différents. L'un est un langage moderne, l'autre un framework robuste. Lequel utiliser et quand ?`,
+      component: <KtorVsSpringArticle />,
+      auteur: "Charmidez ASSIOBO",
+    },
   ],
 };
 

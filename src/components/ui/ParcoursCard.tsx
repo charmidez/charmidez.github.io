@@ -4,6 +4,7 @@ import { TabKey } from "../sections/about/AboutPageData";
 interface parcoursProps {
   titre: string;
   description: string;
+  institut? : string;
   className?: string;
   index: number;
   activeTab?: TabKey;
@@ -12,6 +13,7 @@ interface parcoursProps {
 export default function SectionParcoursCard({
   titre,
   description,
+  institut,
   className,
   index,
   activeTab,
@@ -25,12 +27,9 @@ export default function SectionParcoursCard({
       exit={{ opacity: 0, y: -30 }}
       transition={{ duration: 0.4, delay: index * 0.1 }}
     >
-      <h2 className="card-title">{titre}</h2>
+      <h2 className="card-title font-bold">{titre}</h2>
+      <p className="card-text">{institut}</p>
       <p className="card-text">{description}</p>
-      <a className="card-actions justify-start w-fit hover:gap-4 transition-all transform duration-300" href="#">
-        <p className="text-violet-800 text-sm">Voir plus</p>
-        <img src="/assets/icon/arrow-right.svg" alt="Arrow Right" className="lg:h-5 lg:w-5 w-5" />
-      </a>
     </motion.div>
   );
 }

@@ -1,4 +1,7 @@
-export function UtiliserNextJS() {
+{
+  /** 
+   * 
+   * export function UtiliserNextJS() {
   return (
     <div>
       <p>
@@ -17,6 +20,10 @@ export function UtiliserNextJS() {
     </div>
   );
 }
+   * 
+  */
+}
+
 
 export function ComprendreGitEtPlateformes() {
   return (
@@ -265,3 +272,136 @@ class HelloController {
     </div>
   );
 }
+
+export function UtiliserNextJS() {
+  return (
+    <div className="prose max-w-none">
+      <p>
+        Dans le développement web moderne, les performances et l’expérience
+        utilisateur sont des enjeux cruciaux. C’est pourquoi{" "}
+        <strong>Next.js</strong>, le framework React populaire, propose un
+        composant natif appelé{" "}
+        <code className="text-violet-600">&lt;Image /&gt;</code> pour gérer les
+        images de façon intelligente.
+      </p>
+
+      <h2>📷 Qu’est-ce que le composant &lt;Image /&gt; ?</h2>
+      <img
+        src="/assets/featured/nextjs-image.webp"
+        alt="Image optimisation Next.js"
+        className="rounded-lg my-4 shadow"
+      />
+      <p>
+        Il s’agit d’un composant optimisé qui remplace avantageusement la
+        balise HTML classique <code>&lt;img /&gt;</code>, avec des
+        fonctionnalités intégrées :
+      </p>
+
+      <ul>
+        <li>✅ Chargement paresseux (lazy loading)</li>
+        <li>✅ Redimensionnement côté serveur (optimisation)</li>
+        <li>✅ Conversion automatique en WebP/AVIF</li>
+        <li>✅ Mise en cache intelligente</li>
+        <li>✅ Support responsive natif</li>
+        <li>✅ Accessibilité améliorée (avec priorité)</li>
+      </ul>
+
+      <h2>🧪 Exemple d’utilisation basique</h2>
+      <pre className="bg-gray-900 text-white p-4 rounded-md overflow-x-auto text-sm">
+        <code>
+{`import Image from 'next/image'
+
+export default function Exemple() {
+  return (
+    <Image
+      src="/mon-image.jpg"
+      alt="Texte alternatif"
+      width={800}
+      height={600}
+    />
+  )
+}`}
+        </code>
+      </pre>
+
+      <h2>💡 Comparaison avec &lt;img&gt;</h2>
+      <table className="table-auto w-full border mt-4 text-sm">
+        <thead>
+          <tr className="bg-gray-100">
+            <th className="border p-2">Fonctionnalité</th>
+            <th className="border p-2">&lt;img&gt;</th>
+            <th className="border p-2">&lt;Image /&gt;</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td className="border p-2">Chargement paresseux</td>
+            <td className="border p-2">❌</td>
+            <td className="border p-2">✅</td>
+          </tr>
+          <tr>
+            <td className="border p-2">Optimisation taille/format</td>
+            <td className="border p-2">❌</td>
+            <td className="border p-2">✅</td>
+          </tr>
+          <tr>
+            <td className="border p-2">Conversion WebP</td>
+            <td className="border p-2">❌</td>
+            <td className="border p-2">✅</td>
+          </tr>
+          <tr>
+            <td className="border p-2">SEO et accessibilité</td>
+            <td className="border p-2">⚠️</td>
+            <td className="border p-2">✅</td>
+          </tr>
+        </tbody>
+      </table>
+
+      <h2>🔎 À retenir</h2>
+      <p>
+        Le composant <code>&lt;Image /&gt;</code> de Next.js est indispensable
+        pour toute application qui mise sur :
+      </p>
+      <ul>
+        <li>⚡ Des temps de chargement rapides</li>
+        <li>📱 Une interface responsive optimale</li>
+        <li>🔍 Un bon référencement naturel (SEO)</li>
+      </ul>
+
+      <p className="mt-6">
+        Pour aller plus loin :
+        <ul className="list-disc pl-6 mt-2">
+          <li>
+            <a
+              href="https://nextjs.org/docs/app/building-your-application/optimizing/images"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-blue-600 underline"
+            >
+              Documentation officielle Next.js sur l’optimisation d’image
+            </a>
+          </li>
+          <li>
+            <a
+              href="https://vercel.com/docs/image-optimization"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-blue-600 underline"
+            >
+              Guide Vercel sur les performances images
+            </a>
+          </li>
+        </ul>
+      </p>
+
+      <h2 className="mt-8">🧩 Conclusion</h2>
+      <p>
+        En production, éviter le composant <code>&lt;img&gt;</code> devient une
+        évidence si vous utilisez Next.js. Son composant{" "}
+        <code>&lt;Image /&gt;</code> vous assure une application rapide,
+        accessible et bien référencée. Un choix simple pour un rendu pro. 🌍🚀
+      </p>
+    </div>
+  );
+}
+
