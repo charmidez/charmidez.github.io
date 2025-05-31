@@ -157,15 +157,17 @@ export function SectionParcours() {
           ))}
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 lg:gap-6 gap-3 w-full">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 lg:gap-6 gap-3 w-full flex-wrap">
           <AnimatePresence mode="wait">
             {data[activeTab]?.map((item, index) => (
               <SectionParcoursCard
                 index={index}
                 activeTab={activeTab}
+                date={item.date}
                 titre={item.title}
                 institut={item.institut}
                 description={item.description}
+                details={item.details}
               />
             ))}
           </AnimatePresence>

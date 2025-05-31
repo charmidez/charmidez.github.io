@@ -104,46 +104,66 @@ export const data = {
     {
     //Développeur full stack
     title: "Développeur Full Stack",
-    entreprise: "Groupe UNICOM AFRICA",
-    date: "Février 2020 - Juin 2021 | 1 ans 5 mois",
+    institut: "Freelance",
+    date: "Juin 2021 - Présent | 4 ans",
     description: "Développement d'applications web et mobiles",
     details: [
-      `Création et maintenance de site web (reclogistics.com – esagnde.org – 228news.tg – yemag-uni.com – mchloebeauty.com – robusteconsulte.com).`,
-      `Création et maintenance d’application mobile Android (J’obtiens mon permis – Whatsapp Saver Status – Rec Container Tracking).`,
-      `Conception d’API d’une application de gestion scolaire pour ESIG Global Succès.`,
+      ` + Création et maintenance d'application web (reclogistics.com, esagnde.org, 228news.tg, yemag-uni.com, mchloebeauty.com, robusteconsulte.com, pietri.io).`,
+      ` + Création et maintenance d’application mobile Android (J’obtiens mon permis, Ace Up BlockChain, Rec Container Tracking, Central Contact).`,
+      ` + Conception d’API d’une application de gestion scolaire pour ESIG Global Succès.`,
     ],
   },
 
   {
     //Developpeur web Front-End, Back-End. React
-    title: "Developpeur web Front-End, Back-End. React ",
-    entreprise: "Freelance",
-    date: "Juin 2021 - Présent | 4 ans",
+    title: "Developpeur web Front-End, Back-End. React - WordPress ",
+institut: "Groupe UNICOM AFRICA",
+    date: "Février 2020 - Juin 2021 | 1 ans 5 mois",
     description: "Développement d'applications web et mobiles",
     details: [
-      `Ayant rejoint l’équipe de développement informatique, nous avons créé des applications et sites web dont : unicomafrica.com – sgitogo.tg – isdi-togo.com - audaceconseil.com`,
+      `Ayant rejoint l’équipe de développement informatique, nous avons créé des applications et sites web dont : unicomafrica.com, sgitogo.tg, isdi-togo.com, audaceconseil.com`,
     ],
   },
 
   {
     //Developpeur web
     title: "Développeur Full Stack",
-    entreprise: "Rec Logistics - Consultant",
-    date: "Décembre 2018 - Février 2020 | 4 ans",
-    description: "Développement d'applications web et mobiles",
+    institut: "Rec Logistics - Consultant",
+    date: "Décembre 2018 - Février 2020 | 1 ans 3 mois",
+    description: "Développement d'applications web et mobiles de suivi des conteneurs",
     details: [
       `En tant que consultant, j'ai été chargé de la création et de la maintenance de l'application web de gestion des conteneurs pour REC Logistics.`,
     ],
   },
+
+    {
+    //Stagiaire Developpeur web
+    title: "Stagiaire Développeur web",
+    institut: "LabRie - (ESIG GLOBAL SUCCES)",
+    date: "Juin 2018 - Décembre 2020 | 1 ans 3 mois",
+    description: "Développement d'applications web et mobiles de suivi des conteneurs",
+    details: [
+      `En tant que consultant, j'ai été chargé de la création et de la maintenance de l'application web de gestion des conteneurs pour REC Logistics.`,
+    ],
+  },
+
+      {
+    //Stagiaire Developpeur web mama yovo
+    title: "Stagiaire Développeur web",
+    institut: "Hôtel Mama Yovo",
+    date: "Août 2016 - Décembre 2016 | 5 mois",
+    description: "Conception de site web (hotelmamayovo.fr) et de système de réservation de chambre via le site et des plateformes tiers",
+  },
+
+
   ],
+
   formations: [
-    { title: "Licence professionnelle", institut :"ESIG GLOBAL SUCCES", description: "Systèmes Informatiques & Logiciels / Génie Logiciel." },
-    { title: "Flutter", description: "Développement multiplateforme rapide." }
+    
+    { date : "2015 - 2018", title: "Licence professionnelle", institut :"ESIG GLOBAL SUCCES", description: "Systèmes Informatiques & Logiciels / Génie Logiciel. Niveau : Mention : Bien avec une note de 15,5/20" },
+    { date : "2014", title: "BAC D", institut :"Collège Père Augustin Planque", description: "Baccalaureat Scientifique. Option Biologie" },
   ],
-  parcours: [
-    { title: "UI/UX", description: "Maquettes Figma, design centré utilisateur." },
-    { title: "Tailwind CSS", description: "Stylisation rapide et responsive." }
-  ]
+
 };
 
 
@@ -152,5 +172,4 @@ export type TabKey = 'formations' | 'experiences' | 'parcours';
 export const tabs : { key: TabKey; label: string }[] = [
   { key: "formations", label: "Formations" },
   { key: "experiences", label: "Expériences" },
-  { key: "parcours", label: "Parcours" }
 ];
