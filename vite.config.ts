@@ -41,23 +41,28 @@ import Sitemap from 'vite-plugin-sitemap'
   */}
 
 export default defineConfig(async () => {
-  //const staticRoutes = ['/', '/about', '/projectmine', '/contact'];
 
-  /* Tes routes dynamiques
   const blogPosts = [
     'pourquoi-utiliser-nextjs',
     'comprendre-git-et-plateformes',
     'kotlin-vs-spring',
   ];
 
-  const blogRoutes = blogPosts.map((slug) => `/actualite/${slug}`);
-*/
+  const pagePost = [
+    'about',
+    'contact',
+    'projectmine',
+  ];
+
+  const dynamicRoutes = blogPosts.map((slug) => `/actualite/${slug}`);
+  dynamicRoutes.push(...pagePost.map((slug) => `/${slug}`));
+
   return {
     plugins: [
       react(),
       Sitemap({
         hostname: 'https://charmidez.github.io',
-        //routes: [...staticRoutes, ...blogRoutes],
+        dynamicRoutes
       }),
     ],
     base: "/",
