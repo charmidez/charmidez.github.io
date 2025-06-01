@@ -110,6 +110,11 @@ function App() {
         <meta property="og:type" content="website" />
         <meta property="og:url" content="https://charmidez.github.io" />
         <meta property="og:image" content="https://charmidez.github.io/assets/logo/logomine.png" />
+
+        <meta name="google-site-verification" content="7_P-F5X2UqwUJyPXvLcwO2ygsMfslKAjkNRF8-pk0gM" />
+
+        {/* google-site-verification=7_P-F5X2UqwUJyPXvLcwO2ygsMfslKAjkNRF8-pk0gM */}
+
       </Helmet>
       <div className="lg:text-lg md:text-md text-sm">
         <ScrollToTop />
