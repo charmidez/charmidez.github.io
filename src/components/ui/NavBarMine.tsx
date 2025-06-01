@@ -47,7 +47,7 @@ function NavBarMine() {
             alt="Logo"
             className="h-8 w-8 object-contain mr-2"
           />
-          <a className="font-bold lg:text-2xl text-white">CHARMIDEZ</a>
+          <a className="font-bold lg:text-3xl text-xl text-white">CHARMIDEZ</a>
         </Link>
 
         <div className="navbar-center hidden lg:flex">

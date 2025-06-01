@@ -154,11 +154,10 @@ export function Contactbutton() {
   return (
     <div className="">
       <Titresection titre="Me contacter" />
-      <div className="grid lg:grid-cols-4 md:grid-cols-2 grid-cols-1 lg:gap-4 gap-2">
-        <Contactcard titre="Un appel GSM ?" imgSrc="/assets/icon/call.svg" linkToAction="" textButton="Par ici"/>
-        <Contactcard titre="Me contacter par whatsapp" imgSrc="/assets/icon/whatsapp.svg" linkToAction="" textButton="Un sms par ici"/>
+      <div className="grid lg:grid-cols-3 md:grid-cols-3 grid-cols-1 lg:gap-4 gap-2">
+        <Contactcard titre="Un appel GSM ?" imgSrc="/assets/icon/call.svg" linkToAction="tel:+22890871113" textButton="Par ici"/>
+        <Contactcard titre="Me contacter par whatsapp" imgSrc="/assets/icon/whatsapp.svg" linkToAction="https://wa.me/22890871113" textButton="Un sms par ici"/>
         <Contactcard titre="Me contacter par telegram" imgSrc="/assets/icon/telegram.svg" linkToAction="" textButton="Un message telegram par ici"/>
-        <Contactcard titre="Me contacter par whatsapp" imgSrc="/assets/icon/mail_2.svg" linkToAction="" textButton="Écrire un mail par ici"/>
       </div>
     </div>
   );

@@ -129,7 +129,7 @@ export function SectionCodeVibe() {
           className="rounded-3xl w-40 h-fit lg:w-80 lg:h-fit"
         />
         <div className="flex flex-col gap-2 lg:gap-4">
-          <p className="text-xl rounded-3xl lg:p-8 p-4 shadow-xl bg-white">
+          <p className="text-xl rounded-3xl lg:p-8 p-4 bg-white">
             <span className="font-bold">Vibe codeur </span>c’est pas une méthode
             de travail. C’est un état d’esprit, une esthétique, un moment où le
             code devient une danse entre logique et émotion <span className="text-violet-600 font-bold">- Je ne suis pas un vibe codeur pourtant !</span>
