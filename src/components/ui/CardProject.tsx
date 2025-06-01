@@ -55,9 +55,6 @@ export const CardProjectMobile: React.FC<CardProjectProps> = ({
   logo,
   component,
 }) => {
-  //const [isOpen, setIsOpen] = useState(false);
-  
-  //const closeCarte = () => setIsOpen(false);
 
   const [show, setShow] = useState(false);
   const openCarte = () => setShow(true);

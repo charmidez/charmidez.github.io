@@ -111,10 +111,10 @@ export const data = {
   experiences: [
     {
       //Développeur full stack
-      title: "Développeur Full Stack",
+      title: "Développeur Full Stack || Web - Android",
       institut: "Freelance",
       date: "Juin 2021 - Présent | 4 ans",
-      description: "Développement d'applications web et mobiles",
+      description: "Kotlin - Ktor - Jetpack Compose - ReactJS - WordPress - DevOps",
       details: [
         ` + Création et maintenance d'application web (reclogistics.com, esagnde.org, 228news.tg, yemag-uni.com, mchloebeauty.com, robusteconsulte.com, pietri.io).`,
         ` + Création et maintenance d’application mobile Android (J’obtiens mon permis, Ace Up BlockChain, Rec Container Tracking, Central Contact).`,
@@ -124,10 +124,10 @@ export const data = {
 
     {
       //Developpeur web Front-End, Back-End. React
-      title: "Developpeur web Front-End, Back-End. React - WordPress ",
+      title: "Developpeur web Front-End, Back-End || Web",
       institut: "Groupe UNICOM AFRICA",
       date: "Février 2020 - Juin 2021 | 1 ans 5 mois",
-      description: "Développement d'applications web et mobiles",
+      description: "WordPress - ReactJS - Django",
       details: [
         `Ayant rejoint l’équipe de développement informatique, nous avons créé des applications et sites web dont : unicomafrica.com, sgitogo.tg, isdi-togo.com, audaceconseil.com`,
       ],
@@ -135,11 +135,11 @@ export const data = {
 
     {
       //Developpeur web
-      title: "Développeur Full Stack",
+      title: "Développeur Full Stack || Web - Android",
       institut: "Rec Logistics - Consultant",
       date: "Décembre 2018 - Février 2020 | 1 ans 3 mois",
       description:
-        "Développement d'applications web et mobiles de suivi des conteneurs",
+        "Kotlin - Spring - XML - WordPress",
       details: [
         `En tant que consultant, j'ai été chargé de la création et de la maintenance de l'application web de gestion des conteneurs pour REC Logistics.`,
       ],
@@ -151,7 +151,7 @@ export const data = {
       institut: "LabRie - (ESIG GLOBAL SUCCES)",
       date: "Juin 2018 - Décembre 2020 | 1 ans 3 mois",
       description:
-        "Développement d'applications web et mobiles de suivi des conteneurs",
+        "JavaScript - Boostrap - Fondation 6 - Wordpress - Java",
       details: [
         `En tant que consultant, j'ai été chargé de la création et de la maintenance de l'application web de gestion des conteneurs pour REC Logistics.`,
       ],
@@ -163,8 +163,8 @@ export const data = {
       institut: "Hôtel Mama Yovo",
       date: "Août 2016 - Décembre 2016 | 5 mois",
       description:
-        "Conception de site web (hotelmamayovo.fr) et de système de réservation de chambre via le site et des plateformes tiers",
-      details: [],
+        "WordPress - Java - HTML - CSS",
+      details: [`Conception de site web (hotelmamayovo.fr) et de système de réservation de chambre via le site et des plateformes tiers`],
     },
   ],
 

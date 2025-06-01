@@ -37,6 +37,7 @@ export function ProjectMobile() {
               logo={client.logoSrc}
               imageSrc={client.imgSrc}
               title={client.societe}
+              descText={client.description}
               component={client.component} />
           ))}
         </div>

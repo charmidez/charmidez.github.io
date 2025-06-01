@@ -1,3 +1,4 @@
+
 import { AceUpBlockchain, CentralContact, Esagnde, RecLogistics } from "./ComposantsProject";
 
 /*
@@ -76,18 +77,21 @@ export const projectsMineMobile = {
     {
       societe: "REC CONTAINER TRACKING",
       component: <RecLogistics />,
+      description : "Application mobile de suivi de conteneurs",
       logoSrc: "/assets/logo/logoreccontainertracking.png",
       imgSrc: "/assets/images/reccontainertracking.png",
     },
     {
       societe: "ACE UP BLOCKCHAIN",
       component: <AceUpBlockchain />,
+      description : "Portefeuille electronique de transactions de cryptomonnaies à monnaies fudiciaires",
       logoSrc: "/assets/logo/logoaceupblockchain.png",
       imgSrc: "/assets/images/aceUpBlockchain.png",
     },
     {
       societe: "CENTRAL CONTACT",
       component: <CentralContact />,
+      description : "Application pour enregistrer des contacts de prospects et dispatcher du repertoire personnel",
       logoSrc: "/assets/logo/logocentralcontact.png",
       imgSrc: "/assets/images/centralContact.png",
     },
