@@ -36,9 +36,8 @@ export function ProjectMobile() {
               key={index}
               logo={client.logoSrc}
               imageSrc={client.imgSrc}
-              link={client.lien}
               title={client.societe}
-            />
+              component={client.component} />
           ))}
         </div>
       )}

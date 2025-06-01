@@ -7,8 +7,9 @@ interface CardProjectProps {
   imageSrc: string;
   title: string;
   descText? : string
-  link: string;
+  link?: string;
   logo: string;
+  component?: React.ReactNode;
 }
 
 export const CardProject: React.FC<CardProjectProps> = ({
@@ -52,10 +53,12 @@ export const CardProjectMobile: React.FC<CardProjectProps> = ({
   title,
   descText,
   logo,
+  component,
 }) => {
   //const [isOpen, setIsOpen] = useState(false);
   
   //const closeCarte = () => setIsOpen(false);
+
   const [show, setShow] = useState(false);
   const openCarte = () => setShow(true);
 
@@ -85,7 +88,6 @@ export const CardProjectMobile: React.FC<CardProjectProps> = ({
 
           <a className="card-actions justify-start">
             <ButtonLirePlus
-              //link={link}
               text="Voir"
               onClick={openCarte}
             />
@@ -94,7 +96,7 @@ export const CardProjectMobile: React.FC<CardProjectProps> = ({
       </div>
 
       {
-        setShow && (<Opencarte isVisible={show} onClick={() => setShow(false)} />)
+        setShow && (<Opencarte titre={title} component={component} isVisible={show} onClick={() => setShow(false)} />)
       }
 
     </section>

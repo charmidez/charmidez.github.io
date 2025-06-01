@@ -1,4 +1,4 @@
-import { Esagnde } from "./ComposantsProject";
+import { AceUpBlockchain, CentralContact, Esagnde, RecLogistics } from "./ComposantsProject";
 
 /*
 type Project = {
@@ -54,7 +54,7 @@ export const projectsMineWeb = {
       imgSrc: "/assets/images/srnde.webp",
       lien: "https://soeurndetogo.com/",
     },
-        {
+    {
       societe: "ROBUSTE CONSULTING",
       desc: <Esagnde />,
       logoSrc: "/assets/logo/logorobuste.png",
@@ -71,30 +71,25 @@ export const projectsMineWeb = {
   ],
 };
 
-
-
 export const projectsMineMobile = {
-  client : [
-      {
+  client: [
+    {
       societe: "REC CONTAINER TRACKING",
-      desc: <Esagnde />,
+      component: <RecLogistics />,
       logoSrc: "/assets/logo/logoreccontainertracking.png",
       imgSrc: "/assets/images/reccontainertracking.png",
-      lien: "https://esagnde.org/",
     },
-          {
+    {
       societe: "ACE UP BLOCKCHAIN",
-      desc: <Esagnde />,
+      component: <AceUpBlockchain />,
       logoSrc: "/assets/logo/logoaceupblockchain.png",
       imgSrc: "/assets/images/aceUpBlockchain.png",
-      lien: "https://esagnde.org/",
     },
-              {
+    {
       societe: "CENTRAL CONTACT",
-      desc: <Esagnde />,
+      component: <CentralContact />,
       logoSrc: "/assets/logo/logocentralcontact.png",
       imgSrc: "/assets/images/centralContact.png",
-      lien: "https://esagnde.org/",
     },
-  ]
-}
+  ],
+};

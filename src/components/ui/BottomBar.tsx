@@ -73,15 +73,7 @@ export default function BottomBar() {
                     ? "bg-violet-500 text-white"
                     : " text-white"
                 } `}
-              >
-                {activeMenu === menu.key && (
-                  <motion.div
-                    layoutId="activeHighlight"
-                    className="absolute inset-0 bg-violet-200/60 rounded-lg z-[-1]"
-                    transition={{ type: "spring", stiffness: 300, damping: 25 }}
-                  />
-                )}
-              </MenuItemMineBottom>
+              />
             ))}
           </div>
         </div>
