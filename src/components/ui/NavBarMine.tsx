@@ -14,6 +14,7 @@ const menuItem: { key: MenuKey; label: string; href: string }[] = [
 ];
 
 function NavBarMine() {
+  
   const location = useLocation();
 
   const getMenuFromPath = (path: string): MenuKey => {

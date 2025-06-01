@@ -1,3 +1,4 @@
+
 import { SectionPresentation , SectionActualite, SectionCodeVibe } from "../sections/home/SectionsHome";
 
 function HomePage() {
