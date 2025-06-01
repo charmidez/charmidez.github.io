@@ -157,7 +157,7 @@ export function Contactbutton() {
       <div className="grid lg:grid-cols-3 md:grid-cols-3 grid-cols-1 lg:gap-4 gap-2">
         <Contactcard titre="Un appel GSM ?" imgSrc="/assets/icon/call.svg" linkToAction="tel:+22890871113" textButton="Par ici"/>
         <Contactcard titre="Me contacter par whatsapp" imgSrc="/assets/icon/whatsapp.svg" linkToAction="https://wa.me/22890871113" textButton="Un sms par ici"/>
-        <Contactcard titre="Me contacter par telegram" imgSrc="/assets/icon/telegram.svg" linkToAction="" textButton="Un message telegram par ici"/>
+        <Contactcard titre="Me contacter par telegram" imgSrc="/assets/icon/telegram.svg" linkToAction="https://t.me/charmidez" textButton="Un message telegram par ici"/>
       </div>
     </div>
   );

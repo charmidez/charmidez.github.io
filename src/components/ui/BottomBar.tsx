@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react";
 import { useLocation } from "react-router-dom";
 import { MenuItemMineBottom } from "./MenuItemMine";
-import { motion } from "framer-motion";
+
 
 type MenuKey = "home" | "about" | "projectmine" | "contact";
 

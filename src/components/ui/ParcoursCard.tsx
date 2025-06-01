@@ -6,7 +6,7 @@ interface parcoursProps {
   titre: string;
   date?: string;
   description: string;
-  details?: Array<string>;
+  details?: string[];
   institut?: string;
   className?: string;
   index: number;

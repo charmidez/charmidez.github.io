@@ -135,7 +135,7 @@ export function SectionCompetences() {
 }
 export function SectionParcours() {
   const [activeTab, setActiveTab] = useState<TabKey>("formations");
-  type TabKey = "experiences" | "formations" | "parcours";
+  type TabKey = "experiences" | "formations" ;
   //const current = experiences[activeTab];
   return (
     <div className="flex flex-col">
