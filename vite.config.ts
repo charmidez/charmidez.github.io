@@ -1,15 +1,18 @@
 import { defineConfig } from 'vite'
 import react from '@vitejs/plugin-react'
+//import Sitemap from 'vite-plugin-sitemap'
+
+
 import Sitemap from 'vite-plugin-sitemap'
 
 
-interface SitemapConfig {
+{/*
+  
+  interface SitemapConfig {
   routes: string[];
 }
-
-
-// https://vite.dev/config/
-export default defineConfig({
+  
+  export default defineConfig({
 
   plugins: [
     react(),
@@ -33,4 +36,31 @@ export default defineConfig({
   ],
   base: "/"
 })
+  
+  
+  */}
+
+export default defineConfig(async () => {
+  //const staticRoutes = ['/', '/about', '/projectmine', '/contact'];
+
+  /* Tes routes dynamiques
+  const blogPosts = [
+    'pourquoi-utiliser-nextjs',
+    'comprendre-git-et-plateformes',
+    'kotlin-vs-spring',
+  ];
+
+  const blogRoutes = blogPosts.map((slug) => `/actualite/${slug}`);
+*/
+  return {
+    plugins: [
+      react(),
+      Sitemap({
+        hostname: 'https://charmidez.github.io',
+        //routes: [...staticRoutes, ...blogRoutes],
+      }),
+    ],
+    base: "/",
+  };
+});
 
