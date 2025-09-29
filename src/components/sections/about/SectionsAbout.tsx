@@ -30,7 +30,7 @@ export function SectionAbout() {
         {/* Colonne de gauche */}
         <div className="items-center justify-center flex">
           <img
-            src="/assets/images/profil.webp"
+            src="/assets/images/profilNew.webp"
             alt="image"
             className="lg:h-full lg:w-md h-80 rounded-3xl"
           />
